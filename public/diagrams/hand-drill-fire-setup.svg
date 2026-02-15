@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+      .accent { fill: #e6c36a; }
+      .accent2 { fill: #67d6c2; }
+    </style>
+  </defs>
+
+  <!-- Panel A: Top view -->
+  <rect class="panel" x="28" y="30" width="404" height="460" rx="18" />
+  <text class="title" x="52" y="68">Top view: hearth + notch</text>
+
+  <!-- Hearth board -->
+  <rect class="thin" x="88" y="118" width="284" height="290" rx="22" />
+  <text class="label" x="102" y="146">Hearth board</text>
+
+  <!-- Cup (depression) -->
+  <circle class="line" cx="320" cy="188" r="16" />
+  <circle class="accent" cx="320" cy="188" r="6" />
+  <path class="thin" d="M 336 188 L 372 188" />
+  <text class="label" x="378" y="192">Cup (socket)</text>
+
+  <!-- Notch -->
+  <path class="line" d="M 304 204 L 372 278 L 318 314 Z" />
+  <path class="thin" d="M 342 270 L 392 320" />
+  <text class="label" x="398" y="326">Notch</text>
+
+  <!-- Dust pan (bark/leaf) -->
+  <path class="thin" d="M 260 338 C 285 360, 315 380, 350 396 C 322 416, 286 418, 250 404 C 244 382, 248 358, 260 338 Z" />
+  <path class="thin" d="M 270 356 C 295 372, 320 384, 340 392" />
+  <path class="thin" d="M 260 338 L 250 404" />
+  <text class="label" x="96" y="430">Dust pan (bark / leaf)</text>
+  <path class="thin" d="M 200 424 L 260 392" />
+
+  <!-- Dust pile -->
+  <circle class="accent2" cx="330" cy="308" r="10" />
+  <text class="label" x="102" y="470">Goal: dark dust collects here</text>
+
+  <!-- Panel B: Body position -->
+  <rect class="panel" x="468" y="30" width="404" height="460" rx="18" />
+  <text class="title" x="492" y="68">Body position: spindle + hands</text>
+
+  <!-- Ground line -->
+  <path class="thin" d="M 510 404 L 830 404" />
+
+  <!-- Hearth board (side view) -->
+  <rect class="thin" x="560" y="360" width="230" height="44" rx="10" />
+  <text class="label" x="570" y="386">Hearth</text>
+
+  <!-- Foot -->
+  <path class="line" d="M 586 346 C 610 330, 640 330, 662 344 C 668 348, 670 356, 666 362 C 650 386, 606 392, 584 372 C 576 364, 576 352, 586 346 Z" />
+  <text class="label" x="492" y="346">Pin board with foot</text>
+  <path class="thin" d="M 536 340 L 584 356" />
+
+  <!-- Spindle -->
+  <path class="line" d="M 716 140 L 700 360" />
+  <circle class="accent" cx="701" cy="360" r="6" />
+  <text class="label" x="736" y="178">Spindle</text>
+  <path class="thin" d="M 720 174 L 706 200" />
+
+  <!-- Hands -->
+  <path class="line" d="M 670 126 C 690 110, 716 110, 734 126" />
+  <path class="line" d="M 670 126 C 682 152, 694 166, 706 176 C 718 166, 728 152, 734 126" />
+  <circle class="accent2" cx="684" cy="126" r="6" />
+  <circle class="accent2" cx="720" cy="126" r="6" />
+  <text class="label" x="492" y="126">Hands: downstroke, return quickly</text>
+
+  <!-- Spin arrow -->
+  <path class="thin" d="M 772 224 C 800 240, 802 276, 776 294" />
+  <path class="thin" d="M 774 216 L 792 220 L 784 236" />
+  <path class="thin" d="M 774 302 L 792 298 L 784 282" />
+  <text class="label" x="792" y="260">Spin</text>
+
+  <!-- Notes -->
+  <text class="label" x="492" y="458">Keep the spindle vertical; increase pressure + speed near the end.</text>
+</svg>
+
