@@ -21,6 +21,12 @@ Every article must declare a numeric `tech_level` in front matter. The intent is
 
 Rule of thumb: if an article requires any artificial tool/material/process, it must link to an internal page for it, and that prerequisite must be at a lower tech level.
 
+Optional (recommended): declare machine-checkable prerequisites in front matter:
+
+- `prereqs`: list of prerequisite article slugs (artificial dependencies only). Natural-world inputs are not listed here.
+
+Run `npm run validate` before merging; it enforces `tech_level` and checks that any declared `prereqs` are strictly lower tech level.
+
 ## Content and assets
 
 - Content formats: plain text + SVG. PNGs are allowed only if they are rendered from SVG sources (no hand-edited PNG-only diagrams).
