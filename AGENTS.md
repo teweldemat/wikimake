@@ -10,6 +10,17 @@ Wikimake is a self-contained repository for documenting how to make everything, 
 - Tech-level consistency: do not assume advanced tools in early-stage articles; if a step can be done multiple ways, include a low-tech path first.
 - Reproducible instructions: write complete, measurable steps (materials, dimensions, temperatures, times, yields, tolerances) where applicable.
 
+## Tech levels
+
+Every article must declare a numeric `tech_level` in front matter. The intent is to model dependency layers:
+
+- Level 0: requires no prior technology or documented processes (only natural world inputs + the human body). It may *produce* new artifacts/processes.
+- Level 1: may depend only on Level 0 articles (plus natural world inputs).
+- Level 2: may depend only on Level 0-1 articles (plus natural world inputs).
+- And so on.
+
+Rule of thumb: if an article requires any artificial tool/material/process, it must link to an internal page for it, and that prerequisite must be at a lower tech level.
+
 ## Content and assets
 
 - Content formats: plain text + SVG. PNGs are allowed only if they are rendered from SVG sources (no hand-edited PNG-only diagrams).
@@ -31,6 +42,7 @@ Wikimake is a self-contained repository for documenting how to make everything, 
 
 - Every artificial item mentioned is either defined locally or linked to an internal page that defines it.
 - Prerequisites are explicit and feasible at the stated tech level.
+- `tech_level` is present and prerequisites (when artificial) are at lower tech levels.
 - Steps are actionable and include units where it matters.
 - Any PNGs are generated from SVG sources and the SVG is committed.
 - No external dependencies for content rendering (the wiki remains buildable/deployable from the repo alone).

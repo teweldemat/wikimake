@@ -43,6 +43,14 @@ export default async function ArticlePage({
           <span>{article.meta.title}</span>
         </div>
         <h1 className="articleTitle">{article.meta.title}</h1>
+        <div className="pillRow" aria-label="Article metadata">
+          <span className="pill">
+            Tech Level{" "}
+            {typeof article.meta.techLevel === "number"
+              ? article.meta.techLevel
+              : "?"}
+          </span>
+        </div>
         <div className="articleTabs" aria-label="Article sections">
           <Link className="tab tabActive" href={`/articles/${slug}`}>
             Article

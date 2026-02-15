@@ -60,6 +60,14 @@ export default async function TasksPage({
           <span>Tasks</span>
         </div>
         <h1 className="articleTitle">Tasks: {article.meta.title}</h1>
+        <div className="pillRow" aria-label="Article metadata">
+          <span className="pill">
+            Tech Level{" "}
+            {typeof article.meta.techLevel === "number"
+              ? article.meta.techLevel
+              : "?"}
+          </span>
+        </div>
         <div className="articleTabs" aria-label="Article sections">
           <Link className="tab" href={`/articles/${slug}`}>
             Article
@@ -76,4 +84,3 @@ export default async function TasksPage({
     </article>
   );
 }
-

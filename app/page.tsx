@@ -20,7 +20,12 @@ export default function Home() {
               <h3 className="cardTitle">
                 <Link href={`/articles/${a.slug}`}>{a.title}</Link>
               </h3>
-              {a.summary ? <p className="cardMeta">{a.summary}</p> : null}
+              <p className="cardMeta">
+                <span className="pill">
+                  Tech Level {typeof a.techLevel === "number" ? a.techLevel : "?"}
+                </span>
+                {a.summary ? <span>{a.summary}</span> : null}
+              </p>
             </li>
           ))}
         </ul>

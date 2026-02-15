@@ -72,6 +72,10 @@ function readTextFile(filePath: string): string {
 
 function safeNumber(v: unknown): number | undefined {
   if (typeof v === "number" && Number.isFinite(v)) return v;
+  if (typeof v === "string") {
+    const n = Number(v.trim());
+    if (Number.isFinite(n)) return n;
+  }
   return undefined;
 }
 
@@ -136,6 +140,10 @@ export function getAllArticles(): ArticleMeta[] {
 
   const articles = files.map((fp) => parseArticleFile(fp).meta);
   articles.sort((a, b) => {
+    const at = a.techLevel ?? 9999;
+    const bt = b.techLevel ?? 9999;
+    if (at !== bt) return at - bt;
+
     const ao = a.order ?? 9999;
     const bo = b.order ?? 9999;
     if (ao !== bo) return ao - bo;

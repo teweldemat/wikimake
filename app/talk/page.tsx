@@ -20,11 +20,15 @@ export default function TalkIndex() {
             <h2 className="cardTitle">
               <Link href={`/talk/${a.slug}`}>{a.title}</Link>
             </h2>
-            {a.summary ? <p className="cardMeta">{a.summary}</p> : null}
+            <p className="cardMeta">
+              <span className="pill">
+                Tech Level {typeof a.techLevel === "number" ? a.techLevel : "?"}
+              </span>
+              {a.summary ? <span>{a.summary}</span> : null}
+            </p>
           </li>
         ))}
       </ul>
     </>
   );
 }
-
