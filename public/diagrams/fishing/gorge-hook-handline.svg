@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+      .accent { fill: #e6c36a; }
+      .accent2 { fill: #67d6c2; }
+    </style>
+  </defs>
+
+  <rect class="panel" x="24" y="24" width="852" height="372" rx="18" />
+  <text class="title" x="52" y="62">Gorge hook + handline (schematic)</text>
+
+  <!-- Handline -->
+  <path class="thin" d="M 120 120 C 240 90, 330 180, 420 160 C 520 138, 580 120, 720 160" />
+  <text class="label" x="52" y="118">Line (cordage)</text>
+  <path class="thin" d="M 140 122 L 120 120" />
+
+  <!-- Tie point -->
+  <circle class="accent2" cx="520" cy="138" r="8" />
+  <text class="label" x="548" y="144">Tie at middle</text>
+  <path class="thin" d="M 542 140 L 530 138" />
+
+  <!-- Gorge stick -->
+  <path class="line" d="M 440 214 L 600 214" />
+  <path class="thin" d="M 520 138 L 520 214" />
+  <text class="label" x="424" y="250">Gorge (bone/wood)</text>
+
+  <!-- Notches -->
+  <path class="thin" d="M 456 204 L 468 214 L 456 224" />
+  <path class="thin" d="M 584 204 L 572 214 L 584 224" />
+  <text class="label" x="642" y="224">Small notches help lashing</text>
+  <path class="thin" d="M 632 220 L 592 214" />
+
+  <!-- Bait -->
+  <path class="thin" d="M 520 214 C 512 250, 506 268, 520 296 C 534 268, 528 250, 520 214 Z" />
+  <circle class="accent" cx="520" cy="288" r="8" />
+  <text class="label" x="548" y="290">Bait wraps over gorge</text>
+  <path class="thin" d="M 540 288 L 528 288" />
+
+  <!-- Toggle note -->
+  <text class="label" x="52" y="348">When swallowed, a pull turns the gorge sideways and it catches.</text>
+</svg>
+
