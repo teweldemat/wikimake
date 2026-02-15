@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: "Wikimake",
   description:
     "A self-contained wiki for rebuilding technology from nothing to modern industry.",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
@@ -52,4 +56,3 @@ export default function RootLayout({
     </html>
   );
 }
-
