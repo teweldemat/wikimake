@@ -29,27 +29,41 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Check Vercel Secrets
+        id: vercel
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -n "${VERCEL_TOKEN:-}" && -n "${VERCEL_ORG_ID:-}" && -n "${VERCEL_PROJECT_ID:-}" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "configured=false" >> "$GITHUB_OUTPUT"
+          echo "Vercel deploy skipped: missing one or more secrets (VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID)."
+          echo "Set them in GitHub repo settings: Settings -> Secrets and variables -> Actions."
+
       - name: Vercel Pull (Preview)
-        if: github.event_name == 'pull_request'
+        if: steps.vercel.outputs.configured == 'true' && github.event_name == 'pull_request'
         run: npx vercel pull --yes --environment=preview --token="$VERCEL_TOKEN"
 
       - name: Vercel Build (Preview)
-        if: github.event_name == 'pull_request'
+        if: steps.vercel.outputs.configured == 'true' && github.event_name == 'pull_request'
         run: npx vercel build --token="$VERCEL_TOKEN"
 
       - name: Vercel Deploy (Preview)
-        if: github.event_name == 'pull_request'
+        if: steps.vercel.outputs.configured == 'true' && github.event_name == 'pull_request'
         run: npx vercel deploy --prebuilt --token="$VERCEL_TOKEN"
 
       - name: Vercel Pull (Production)
-        if: github.event_name == 'push'
+        if: steps.vercel.outputs.configured == 'true' && github.event_name == 'push'
         run: npx vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
       - name: Vercel Build (Production)
-        if: github.event_name == 'push'
+        if: steps.vercel.outputs.configured == 'true' && github.event_name == 'push'
         run: npx vercel build --prod --token="$VERCEL_TOKEN"
 
       - name: Vercel Deploy (Production)
-        if: github.event_name == 'push'
+        if: steps.vercel.outputs.configured == 'true' && github.event_name == 'push'
         run: npx vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
-
