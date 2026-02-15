@@ -41,9 +41,9 @@
   <circle class="accent2" cx="330" cy="308" r="10" />
   <text class="label" x="102" y="470">Goal: dark dust collects here</text>
 
-  <!-- Panel B: Body position -->
+  <!-- Panel B: Motion + forces (no human drawing) -->
   <rect class="panel" x="468" y="30" width="404" height="460" rx="18" />
-  <text class="title" x="492" y="68">Body position: spindle + hands</text>
+  <text class="title" x="492" y="68">Schematic: motion + forces</text>
 
   <!-- Ground line -->
   <path class="thin" d="M 510 404 L 830 404" />
@@ -52,23 +52,23 @@
   <rect class="thin" x="560" y="360" width="230" height="44" rx="10" />
   <text class="label" x="570" y="386">Hearth</text>
 
-  <!-- Foot -->
-  <path class="line" d="M 586 346 C 610 330, 640 330, 662 344 C 668 348, 670 356, 666 362 C 650 386, 606 392, 584 372 C 576 364, 576 352, 586 346 Z" />
-  <text class="label" x="492" y="346">Pin board with foot</text>
-  <path class="thin" d="M 536 340 L 584 356" />
+  <!-- Pinning force -->
+  <path class="thin" d="M 604 320 L 604 350" />
+  <path class="thin" d="M 596 342 L 604 350 L 612 342" />
+  <text class="label" x="492" y="334">Pin board firmly (body weight)</text>
+  <path class="thin" d="M 548 330 L 604 342" />
 
   <!-- Spindle -->
-  <path class="line" d="M 716 140 L 700 360" />
-  <circle class="accent" cx="701" cy="360" r="6" />
+  <path class="line" d="M 700 140 L 700 360" />
+  <circle class="accent" cx="700" cy="360" r="6" />
   <text class="label" x="736" y="178">Spindle</text>
   <path class="thin" d="M 720 174 L 706 200" />
 
-  <!-- Hands -->
-  <path class="line" d="M 670 126 C 690 110, 716 110, 734 126" />
-  <path class="line" d="M 670 126 C 682 152, 694 166, 706 176 C 718 166, 728 152, 734 126" />
-  <circle class="accent2" cx="684" cy="126" r="6" />
-  <circle class="accent2" cx="720" cy="126" r="6" />
-  <text class="label" x="492" y="126">Hands: downstroke, return quickly</text>
+  <!-- Downward pressure + hand travel -->
+  <path class="thin" d="M 658 156 L 658 238" />
+  <path class="thin" d="M 650 230 L 658 238 L 666 230" />
+  <text class="label" x="492" y="126">Palms slide down; return quickly</text>
+  <text class="label" x="492" y="154">Increase pressure + speed near the end</text>
 
   <!-- Spin arrow -->
   <path class="thin" d="M 772 224 C 800 240, 802 276, 776 294" />
@@ -77,6 +77,5 @@
   <text class="label" x="792" y="260">Spin</text>
 
   <!-- Notes -->
-  <text class="label" x="492" y="458">Keep the spindle vertical; increase pressure + speed near the end.</text>
+  <text class="label" x="492" y="458">Keep the spindle vertical; keep the notch open to airflow.</text>
 </svg>
-
