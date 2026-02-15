@@ -176,6 +176,19 @@ a:hover {
   margin-top: 12px;
 }
 
+.gitMeta {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+.gitMeta time {
+  color: color-mix(in srgb, var(--ink) 92%, var(--muted) 8%);
+}
+
 .articleHeader {
   margin: 0 0 18px;
 }

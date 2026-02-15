@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Markdown from "@/components/Markdown";
+import GitMetaLine from "@/components/GitMetaLine";
 import { getAllArticles, getArticleBySlug } from "@/lib/content";
 
 export const dynamic = "force-static";
@@ -51,6 +52,7 @@ export default async function ArticlePage({
               : "?"}
           </span>
         </div>
+        <GitMetaLine git={article.meta.git} />
         <div className="articleTabs" aria-label="Article sections">
           <Link className="tab tabActive" href={`/articles/${slug}`}>
             Article

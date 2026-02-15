@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import { getGitFileMeta, type GitFileMeta } from "./git";
 
 let cachedContentRoot: string | null = null;
 
@@ -49,6 +50,7 @@ export type ArticleMeta = {
   summary?: string;
   order?: number;
   techLevel?: number;
+  git?: GitFileMeta;
 };
 
 export type Article = {
@@ -96,9 +98,10 @@ function parseArticleFile(filePath: string): Article {
   const order = safeNumber(parsed.data.order);
   const techLevel =
     safeNumber(parsed.data.tech_level) ?? safeNumber(parsed.data.techLevel);
+  const git = getGitFileMeta(filePath) ?? undefined;
 
   return {
-    meta: { slug, title, summary, order, techLevel },
+    meta: { slug, title, summary, order, techLevel, git },
     content: parsed.content.trim(),
   };
 }

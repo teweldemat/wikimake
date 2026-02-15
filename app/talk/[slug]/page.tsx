@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Markdown from "@/components/Markdown";
+import GitMetaLine from "@/components/GitMetaLine";
 import { getAllArticles, getArticleBySlug, getTalkBySlug } from "@/lib/content";
 
 export const dynamic = "force-static";
@@ -68,6 +69,7 @@ export default async function TalkPage({
               : "?"}
           </span>
         </div>
+        <GitMetaLine git={article.meta.git} />
         <div className="articleTabs" aria-label="Article sections">
           <Link className="tab" href={`/articles/${slug}`}>
             Article
