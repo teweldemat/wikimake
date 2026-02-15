@@ -49,7 +49,7 @@ If it turns to sand/dust or crumbles, it will not make good cutting edges.
 
 1. Hold the core stone firmly.
 2. Strike near an edge, not the center of a flat face.
-3. Aim for a glancing blow at about a 45 to 70 degree angle relative to the surface.
+3. Aim for a glancing blow: roughly half to three-quarters of a right angle (about 45° to 70°; see [Measure Angles Without Tools](/articles/measure-angles-without-tools)).
 4. After each strike, look for flakes with long sharp edges.
 
 If the core is too large to hold, place it on an anvil rock and strike it from above.
@@ -86,4 +86,3 @@ A good cutting flake can:
 
 - **Scraper**: pick a thick flake with a strong edge; scrape wood and hide with it.
 - **Sawing**: a serrated edge can saw plant stalks and small branches by pulling repeatedly.
-
