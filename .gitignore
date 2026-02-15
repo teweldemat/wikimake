@@ -1,0 +1,17 @@
+# Node / Next
+node_modules/
+.next/
+out/
+dist/
+.npm-cache/
+
+# Vercel linking (keep IDs out of git)
+.vercel/
+
+# Env files
+.env
+.env.*.local
+
+# OS/editor noise
+.DS_Store
+*.log
