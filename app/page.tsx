@@ -2,6 +2,8 @@ import Link from "next/link";
 import Markdown from "@/components/Markdown";
 import { getAllArticles, getHomePage } from "@/lib/content";
 
+export const dynamic = "force-static";
+
 export default function Home() {
   const home = getHomePage();
   const articles = getAllArticles().slice(0, 6);
@@ -26,4 +28,3 @@ export default function Home() {
     </>
   );
 }
-

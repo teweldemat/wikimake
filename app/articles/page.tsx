@@ -5,6 +5,8 @@ export const metadata = {
   title: "Articles | Wikimake",
 };
 
+export const dynamic = "force-static";
+
 export default function ArticlesIndex() {
   const articles = getAllArticles();
 
@@ -28,4 +30,3 @@ export default function ArticlesIndex() {
     </>
   );
 }
-

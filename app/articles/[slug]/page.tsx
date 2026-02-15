@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import Markdown from "@/components/Markdown";
 import { getAllArticles, getArticleBySlug } from "@/lib/content";
 
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllArticles().map((a) => ({ slug: a.slug }));
 }
@@ -35,4 +38,3 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     </article>
   );
 }
-
