@@ -2,8 +2,38 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 
-const CONTENT_ROOT = path.join(process.cwd(), "content");
-const ARTICLES_DIR = path.join(CONTENT_ROOT, "articles");
+let cachedContentRoot: string | null = null;
+
+function resolveContentRoot(): string {
+  if (
+    cachedContentRoot &&
+    fs.existsSync(path.join(cachedContentRoot, "index.md"))
+  ) {
+    return cachedContentRoot;
+  }
+
+  // Next may execute server code with a cwd somewhere under `.next/` during
+  // build-time pre-rendering. Walk upward until we find `content/index.md`.
+  let dir = process.cwd();
+  for (let i = 0; i < 12; i++) {
+    const candidate = path.join(dir, "content");
+    if (fs.existsSync(path.join(candidate, "index.md"))) {
+      cachedContentRoot = candidate;
+      return candidate;
+    }
+
+    const parent = path.dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+
+  cachedContentRoot = path.join(process.cwd(), "content");
+  return cachedContentRoot;
+}
+
+function resolveArticlesDir(): string {
+  return path.join(resolveContentRoot(), "articles");
+}
 
 export type ArticleMeta = {
   slug: string;
@@ -32,7 +62,8 @@ function parseArticleFile(filePath: string): Article {
   const parsed = matter(raw);
 
   const basename = path.basename(filePath, path.extname(filePath));
-  const slug = typeof parsed.data.slug === "string" ? parsed.data.slug : basename;
+  const slug =
+    typeof parsed.data.slug === "string" ? parsed.data.slug.trim() : basename;
   const title =
     typeof parsed.data.title === "string" && parsed.data.title.trim()
       ? parsed.data.title.trim()
@@ -51,7 +82,7 @@ function parseArticleFile(filePath: string): Article {
 }
 
 export function getHomePage(): { content: string } {
-  const filePath = path.join(CONTENT_ROOT, "index.md");
+  const filePath = path.join(resolveContentRoot(), "index.md");
   if (!fs.existsSync(filePath)) {
     return { content: "# Wikimake\n\nMissing `content/index.md`." };
   }
@@ -59,12 +90,13 @@ export function getHomePage(): { content: string } {
 }
 
 export function getAllArticles(): ArticleMeta[] {
-  if (!fs.existsSync(ARTICLES_DIR)) return [];
+  const articlesDir = resolveArticlesDir();
+  if (!fs.existsSync(articlesDir)) return [];
 
   const files = fs
-    .readdirSync(ARTICLES_DIR)
+    .readdirSync(articlesDir)
     .filter((f) => f.endsWith(".md"))
-    .map((f) => path.join(ARTICLES_DIR, f));
+    .map((f) => path.join(articlesDir, f));
 
   const articles = files.map((fp) => parseArticleFile(fp).meta);
   articles.sort((a, b) => {
@@ -78,12 +110,13 @@ export function getAllArticles(): ArticleMeta[] {
 }
 
 export function getArticleBySlug(slug: string): Article | null {
-  if (!fs.existsSync(ARTICLES_DIR)) return null;
+  const articlesDir = resolveArticlesDir();
+  if (!fs.existsSync(articlesDir)) return null;
 
   const files = fs
-    .readdirSync(ARTICLES_DIR)
+    .readdirSync(articlesDir)
     .filter((f) => f.endsWith(".md"))
-    .map((f) => path.join(ARTICLES_DIR, f));
+    .map((f) => path.join(articlesDir, f));
 
   for (const fp of files) {
     const article = parseArticleFile(fp);
@@ -91,4 +124,3 @@ export function getArticleBySlug(slug: string): Article | null {
   }
   return null;
 }
-
