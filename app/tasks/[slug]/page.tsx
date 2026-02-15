@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Markdown from "@/components/Markdown";
-import { getAllArticles, getArticleBySlug } from "@/lib/content";
+import { getAllArticles, getArticleBySlug, getTasksBySlug } from "@/lib/content";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -20,12 +20,12 @@ export async function generateMetadata({
   if (!article) return { title: "Not Found | Wikimake" };
 
   return {
-    title: `${article.meta.title} | Wikimake`,
-    description: article.meta.summary,
+    title: `Tasks: ${article.meta.title} | Wikimake`,
+    description: `Task list for: ${article.meta.title}`,
   };
 }
 
-export default async function ArticlePage({
+export default async function TasksPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -34,28 +34,46 @@ export default async function ArticlePage({
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 
+  const tasks = getTasksBySlug(slug);
+  const content =
+    tasks?.content ??
+    [
+      "## No task list yet",
+      "",
+      `Create \`content/tasks/${slug}.md\` to track work for this article.`,
+      "",
+      "Example:",
+      "",
+      "- [ ] Add diagrams",
+      "- [ ] Add measurements / tolerances",
+      "- [ ] Add safety section",
+    ].join("\n");
+
   return (
     <article>
       <header className="articleHeader">
         <div className="crumbs">
           <Link href="/articles">Articles</Link>
           <span aria-hidden="true">/</span>
-          <span>{article.meta.title}</span>
+          <Link href={`/articles/${slug}`}>{article.meta.title}</Link>
+          <span aria-hidden="true">/</span>
+          <span>Tasks</span>
         </div>
-        <h1 className="articleTitle">{article.meta.title}</h1>
+        <h1 className="articleTitle">Tasks: {article.meta.title}</h1>
         <div className="articleTabs" aria-label="Article sections">
-          <Link className="tab tabActive" href={`/articles/${slug}`}>
+          <Link className="tab" href={`/articles/${slug}`}>
             Article
           </Link>
           <Link className="tab" href={`/talk/${slug}`}>
             Talk
           </Link>
-          <Link className="tab" href={`/tasks/${slug}`}>
+          <Link className="tab tabActive" href={`/tasks/${slug}`}>
             Tasks
           </Link>
         </div>
       </header>
-      <Markdown content={article.content} />
+      <Markdown content={content} />
     </article>
   );
 }
+

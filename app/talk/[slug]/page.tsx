@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Markdown from "@/components/Markdown";
-import { getAllArticles, getArticleBySlug } from "@/lib/content";
+import { getAllArticles, getArticleBySlug, getTalkBySlug } from "@/lib/content";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -20,12 +20,12 @@ export async function generateMetadata({
   if (!article) return { title: "Not Found | Wikimake" };
 
   return {
-    title: `${article.meta.title} | Wikimake`,
-    description: article.meta.summary,
+    title: `Talk: ${article.meta.title} | Wikimake`,
+    description: `Discussion for: ${article.meta.title}`,
   };
 }
 
-export default async function ArticlePage({
+export default async function TalkPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -34,20 +34,37 @@ export default async function ArticlePage({
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 
+  const talk = getTalkBySlug(slug);
+  const content =
+    talk?.content ??
+    [
+      "## No talk page yet",
+      "",
+      `Create \`content/talk/${slug}.md\` to start discussion for this article.`,
+      "",
+      "Suggested sections:",
+      "",
+      "- Open questions",
+      "- Proposed improvements",
+      "- Decisions",
+    ].join("\n");
+
   return (
     <article>
       <header className="articleHeader">
         <div className="crumbs">
           <Link href="/articles">Articles</Link>
           <span aria-hidden="true">/</span>
-          <span>{article.meta.title}</span>
+          <Link href={`/articles/${slug}`}>{article.meta.title}</Link>
+          <span aria-hidden="true">/</span>
+          <span>Talk</span>
         </div>
-        <h1 className="articleTitle">{article.meta.title}</h1>
+        <h1 className="articleTitle">Talk: {article.meta.title}</h1>
         <div className="articleTabs" aria-label="Article sections">
-          <Link className="tab tabActive" href={`/articles/${slug}`}>
+          <Link className="tab" href={`/articles/${slug}`}>
             Article
           </Link>
-          <Link className="tab" href={`/talk/${slug}`}>
+          <Link className="tab tabActive" href={`/talk/${slug}`}>
             Talk
           </Link>
           <Link className="tab" href={`/tasks/${slug}`}>
@@ -55,7 +72,8 @@ export default async function ArticlePage({
           </Link>
         </div>
       </header>
-      <Markdown content={article.content} />
+      <Markdown content={content} />
     </article>
   );
 }
+

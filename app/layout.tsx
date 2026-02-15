@@ -42,6 +42,8 @@ export default function RootLayout({
             <nav className="nav" aria-label="Primary">
               <Link href="/">Home</Link>
               <Link href="/articles">Articles</Link>
+              <Link href="/tasks">Tasks</Link>
+              <Link href="/talk">Talk</Link>
             </nav>
           </div>
         </header>

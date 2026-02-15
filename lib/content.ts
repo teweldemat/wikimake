@@ -35,6 +35,14 @@ function resolveArticlesDir(): string {
   return path.join(resolveContentRoot(), "articles");
 }
 
+function resolveTalkDir(): string {
+  return path.join(resolveContentRoot(), "talk");
+}
+
+function resolveTasksDir(): string {
+  return path.join(resolveContentRoot(), "tasks");
+}
+
 export type ArticleMeta = {
   slug: string;
   title: string;
@@ -45,6 +53,16 @@ export type ArticleMeta = {
 
 export type Article = {
   meta: ArticleMeta;
+  content: string;
+};
+
+export type NoteMeta = {
+  slug: string;
+  title: string;
+};
+
+export type Note = {
+  meta: NoteMeta;
   content: string;
 };
 
@@ -77,6 +95,24 @@ function parseArticleFile(filePath: string): Article {
 
   return {
     meta: { slug, title, summary, order, techLevel },
+    content: parsed.content.trim(),
+  };
+}
+
+function parseNoteFile(filePath: string): Note {
+  const raw = readTextFile(filePath);
+  const parsed = matter(raw);
+
+  const basename = path.basename(filePath, path.extname(filePath));
+  const slug =
+    typeof parsed.data.slug === "string" ? parsed.data.slug.trim() : basename;
+  const title =
+    typeof parsed.data.title === "string" && parsed.data.title.trim()
+      ? parsed.data.title.trim()
+      : slug;
+
+  return {
+    meta: { slug, title },
     content: parsed.content.trim(),
   };
 }
@@ -123,4 +159,18 @@ export function getArticleBySlug(slug: string): Article | null {
     if (article.meta.slug === slug) return article;
   }
   return null;
+}
+
+export function getTalkBySlug(slug: string): Note | null {
+  const talkDir = resolveTalkDir();
+  const filePath = path.join(talkDir, `${slug}.md`);
+  if (!fs.existsSync(filePath)) return null;
+  return parseNoteFile(filePath);
+}
+
+export function getTasksBySlug(slug: string): Note | null {
+  const tasksDir = resolveTasksDir();
+  const filePath = path.join(tasksDir, `${slug}.md`);
+  if (!fs.existsSync(filePath)) return null;
+  return parseNoteFile(filePath);
 }
