@@ -11,7 +11,7 @@ function isoDate(iso: string): string {
 
 export default function Home() {
   const home = getHomePage();
-  const articles = getAllArticles().slice(0, 6);
+  const articles = getAllArticles().slice(0, 4);
 
   return (
     <>

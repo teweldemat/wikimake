@@ -132,6 +132,14 @@ export function getHomePage(): { content: string } {
   return { content: readTextFile(filePath).trim() };
 }
 
+export function getContributePage(): { content: string } {
+  const filePath = path.join(resolveContentRoot(), "contribute.md");
+  if (!fs.existsSync(filePath)) {
+    return { content: "# Contribute\n\nMissing `content/contribute.md`." };
+  }
+  return { content: readTextFile(filePath).trim() };
+}
+
 export function getAllArticles(): ArticleMeta[] {
   const articlesDir = resolveArticlesDir();
   if (!fs.existsSync(articlesDir)) return [];

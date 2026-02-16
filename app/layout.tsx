@@ -44,6 +44,7 @@ export default function RootLayout({
               <Link href="/articles">Articles</Link>
               <Link href="/tasks">Tasks</Link>
               <Link href="/talk">Talk</Link>
+              <Link href="/contribute">Contribute</Link>
             </nav>
           </div>
         </header>
