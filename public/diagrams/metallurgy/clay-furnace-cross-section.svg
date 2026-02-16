@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-dark { fill: #1a2028; }
+      .fill-char { fill: #2f3642; }
+      .fill-hot { fill: #e6c36a; fill-opacity: 0.85; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+    </style>
+  </defs>
+
+  <rect class="panel" x="24" y="24" width="872" height="412" rx="18" />
+  <text class="title" x="50" y="60">Small clay furnace cross-section (schematic)</text>
+
+  <!-- Ground -->
+  <path class="thin" d="M 70 360 L 860 360" />
+
+  <!-- Furnace shell -->
+  <rect class="line" x="280" y="96" width="240" height="264" rx="28" />
+  <rect class="fill-dark" x="322" y="126" width="156" height="226" rx="20" />
+  <text class="label" x="542" y="114">Clay wall</text>
+  <path class="thin" d="M 534 112 L 520 126" />
+
+  <!-- Charcoal/charge layers -->
+  <rect class="fill-char" x="334" y="152" width="132" height="28" rx="8" />
+  <rect class="fill-char" x="334" y="198" width="132" height="28" rx="8" />
+  <rect class="fill-char" x="334" y="244" width="132" height="28" rx="8" />
+  <text class="label" x="542" y="184">Charcoal + ore layers</text>
+  <path class="thin" d="M 534 180 L 468 182" />
+
+  <!-- Reaction zone -->
+  <ellipse class="fill-hot" cx="400" cy="300" rx="64" ry="30" />
+  <text class="label" x="542" y="256">Hot reaction zone</text>
+  <path class="thin" d="M 534 252 L 458 286" />
+
+  <!-- Slag/prill collection -->
+  <ellipse class="thin" cx="400" cy="334" rx="52" ry="12" />
+  <text class="label" x="542" y="300">Slag/prill zone</text>
+  <path class="thin" d="M 534 296 L 452 332" />
+
+  <!-- Tuyere -->
+  <path class="line" d="M 210 286 L 314 258" />
+  <rect class="fill-char" x="212" y="278" width="110" height="14" rx="6" transform="rotate(-14 212 278)" />
+  <text class="label" x="90" y="260">Tuyere (~10° to 20° down)</text>
+  <path class="thin" d="M 248 262 L 212 270" />
+
+  <!-- Air direction -->
+  <path class="thin" d="M 210 286 L 300 262" />
+  <path class="thin" d="M 292 256 L 300 262 L 294 270" />
+  <text class="label" x="82" y="316">Air blast</text>
+
+  <!-- Top opening -->
+  <path class="thin" d="M 334 126 L 466 126" />
+  <text class="label" x="542" y="146">Top charging opening</text>
+  <path class="thin" d="M 534 142 L 466 126" />
+</svg>
+
