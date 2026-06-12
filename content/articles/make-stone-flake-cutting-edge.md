@@ -16,6 +16,10 @@ This is one of the most important Level 0 capabilities because it enables contro
 
 - None (Level 0).
 
+## Diagram
+
+![Strike angle and where to hit the core](/diagrams/stone/flake-strike-angle.svg)
+
 ## Materials
 
 - **Core stone**: a fist-sized rock that fractures with sharp edges when struck.
@@ -62,6 +66,11 @@ If the core is too large to hold, place it on an anvil rock and strike it from a
 
 Do not “test sharpness” by sliding your finger along the edge. Tap the edge lightly against a dry twig or plant fiber instead.
 
+Quick handles for more control:
+
+- **Bark wrap**: fold a strip of thick bark over the blunt back of the flake and squeeze — enough for most cutting and scraping.
+- **Split-stick clamp**: split a green stick a hand deep, seat the flake's blunt back in the split, and squeeze the stick closed in your fist for sawing strokes. Once you have cordage, bind the stick above and below the flake for a lasting knife ([Make Cordage (Plant Fibers)](/articles/make-cordage-plant-fibers), [Lash Objects Together (Cordage)](/articles/lash-objects-with-cordage)).
+
 ## Verification
 
 A good cutting flake can:
@@ -75,6 +84,13 @@ A good cutting flake can:
 - Stone flakes can be sharper than metal razors.
 - Chips can fly into eyes. Keep your face back from the strike, and do not strike toward your body.
 - Keep the work area clean; sharp flakes on the ground are foot injuries waiting to happen.
+
+### Storing and disposing of flakes
+
+- Keep one bark slab as a "sharps tray" at the work spot; every flake and chip goes on it, never on the ground.
+- Store keeper flakes folded in a bark or thick-leaf wallet, edges inward, tied or weighted shut, off the ground.
+- Bury spent flakes and knapping chips in one marked spot away from paths, work areas, and sleeping ground — knapping debris stays razor sharp essentially forever.
+- When done, sweep the area with a leafy branch and inspect at a low light angle: sharp chips glint.
 
 ## Troubleshooting
 

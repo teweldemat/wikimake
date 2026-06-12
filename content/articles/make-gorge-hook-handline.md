@@ -53,6 +53,14 @@ This article covers making a gorge hook, attaching it to a handline, and basic w
 
 If using wood: choose a straight-grained piece and avoid punky or cracked wood.
 
+Sizing by target fish (when in doubt, go smaller — a small gorge catches big fish more often than the reverse):
+
+| Target fish | Gorge length | Gorge thickness | Line |
+| --- | --- | --- | --- |
+| Palm-sized | about 2 finger-widths | grass-stem thin | thinnest even 2-ply |
+| Hand- to forearm-length | half to one finger-length | twig thin | standard 2-ply |
+| Larger | a full finger-length or slightly more | up to half a thumb-width | doubled line or 3-ply |
+
 ### 2) Tie the line to the middle
 
 Goal: the line must not slip off-center.
@@ -79,6 +87,12 @@ You can fish without either: a sinker helps get bait down; a float helps detect 
 
 1. Wrap bait so it covers the gorge and hides the line tie.
 2. Do not leave the gorge exposed; the goal is for the fish to swallow it.
+
+Keeping bait on:
+
+- Bind soft bait with a few turns of the thinnest fiber you have (a single ply teased from cordage scrap works).
+- In current, prefer tough baits — grubs, snails, meat scraps with skin on — over soft ones that wash off.
+- Re-bait after every strike: half-stripped bait exposes the gorge, and fish refuse an exposed gorge.
 
 ### 5) Fish with the handline
 
@@ -117,6 +131,7 @@ Method options:
 ## Variants
 
 - **Improvised hook**: a bent thorn or carved wooden hook can work, but gorges are simpler at low tech.
+- **Carved barbless hook**: carve a J-shape from a naturally forked twig joint or dense bone, sharpening the short arm into the point. No barb means the fish stays on only while the line is tight — keep steady tension from strike to shore. Harder to make than a gorge, but reusable, easier to unhook, and better when fish are striking but not swallowing.
 - **Simple spear**: sharpened stick fishing works in shallow clear water.
 - **Trap/weir**: in some locations, passive fish traps are more efficient than hook-and-line.
 

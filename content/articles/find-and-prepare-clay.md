@@ -78,7 +78,16 @@ A second quick check: rub a wet pinch between thumb and finger. Clay feels slick
 1. Knead the stiff clay like dough: press, fold, turn, repeat, squeezing out air pockets and evening out wet and dry spots. Air pockets burst when fired, so knead well.
 2. For furnace walls or anything that will be fired, knead in temper: about 1 part coarse sand to 2 to 3 parts clay, and/or small handfuls of chopped dry grass. The mix should still hold a coil but feel slightly gritty.
 
-### 5) Store
+### 5) Shrinkage test (before big builds)
+
+Clay shrinks as it dries; too much shrinkage means cracks. Test the finished body before committing it to a furnace or large pot:
+
+1. Roll a bar of the prepared body, about a handspan long and thumb-thick.
+2. Scratch two marks exactly a handspan apart (use your reference stick: [Measure Without Tools (Body Units)](/articles/measure-without-tools)).
+3. Dry the bar fully in shade (2 to 4 days), then measure the marks again.
+4. Read the result: marks closer by up to about one finger-width per handspan (roughly a tenth) and a straight, uncracked bar — good body. Shrinks more, warps, or cracks — knead in more sand temper and test again.
+
+### 6) Store
 
 Keep prepared clay wrapped in large leaves or bark, in shade. If it stiffens, knead water back in; if it slumps, dry it some more. Dried-out clay is not ruined — slake it and start again.
 
@@ -86,6 +95,7 @@ Keep prepared clay wrapped in large leaves or bark, in shade. If it stiffens, kn
 
 - A finger-thick coil bends around your finger without major cracking.
 - A fist-sized test ball dried slowly in shade for a few days shows at most fine surface cracks (deep cracks: add temper or dry slower).
+- A marked test bar shrinks no more than about a tenth of its length and dries straight (step 5).
 - Tear a kneaded lump in half: the inside should be uniform, with no visible air pockets.
 
 ## Safety

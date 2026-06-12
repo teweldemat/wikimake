@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .bar { fill: none; stroke: #eef2f6; stroke-width: 4; stroke-linecap: round; }
+      .tick { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.01em; }
+      .small { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 12px; font-weight: 700; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+    </style>
+  </defs>
+
+  <rect class="panel" x="24" y="24" width="872" height="472" rx="18" />
+  <text class="title" x="50" y="60">Body units, drawn to scale against each other</text>
+
+  <!-- finger width ~1.75 cm -->
+  <text class="label" x="50" y="124">finger width</text>
+  <path class="bar" d="M 230 120 L 244 120" />
+  <path class="tick" d="M 230 112 L 230 128" />
+  <path class="tick" d="M 244 112 L 244 128" />
+  <text class="small" x="262" y="124">~1.5–2 cm</text>
+
+  <!-- thumb width ~2.25 cm -->
+  <text class="label" x="50" y="184">thumb width</text>
+  <path class="bar" d="M 230 180 L 248 180" />
+  <path class="tick" d="M 230 172 L 230 188" />
+  <path class="tick" d="M 248 172 L 248 188" />
+  <text class="small" x="266" y="184">~2–2.5 cm</text>
+
+  <!-- palm width ~8.5 cm -->
+  <text class="label" x="50" y="244">palm width</text>
+  <path class="bar" d="M 230 240 L 298 240" />
+  <path class="tick" d="M 230 232 L 230 248" />
+  <path class="tick" d="M 298 232 L 298 248" />
+  <text class="small" x="316" y="244">~7–10 cm</text>
+
+  <!-- handspan ~20.5 cm -->
+  <text class="label" x="50" y="304">handspan</text>
+  <path class="bar" d="M 230 300 L 394 300" />
+  <path class="tick" d="M 230 292 L 230 308" />
+  <path class="tick" d="M 394 292 L 394 308" />
+  <text class="small" x="412" y="304">~18–23 cm</text>
+
+  <!-- cubit ~47 cm -->
+  <text class="label" x="50" y="364">cubit</text>
+  <text class="small" x="50" y="382">(elbow → fingertips)</text>
+  <path class="bar" d="M 230 360 L 606 360" />
+  <path class="tick" d="M 230 352 L 230 368" />
+  <path class="tick" d="M 606 352 L 606 368" />
+  <text class="small" x="624" y="364">~42–52 cm</text>
+
+  <!-- pace ~70 cm -->
+  <text class="label" x="50" y="424">pace (one step)</text>
+  <path class="bar" d="M 230 420 L 790 420" />
+  <path class="tick" d="M 230 412 L 230 428" />
+  <path class="tick" d="M 790 412 L 790 428" />
+  <text class="small" x="808" y="424">~60–80 cm</text>
+
+  <text class="small" x="50" y="472">Your own values differ — what matters is that they stay consistent. Mark yours on a reference stick.</text>
+</svg>

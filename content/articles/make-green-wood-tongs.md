@@ -42,6 +42,8 @@ Green-wood tongs are quick to make and treated as disposable: the tips char with
 2. Strip off twigs and leaves.
 3. Flex it gently: it should bow easily and snap back.
 
+Springiness test for an unfamiliar tree: bend a pencil-thick twig from it into a U. If it springs back with no cracking sound, the wood is right. If it folds with white crushed fibers on the outside of the bend, or snaps outright, look elsewhere.
+
 ### 2) Thin the middle (the hinge)
 
 1. Find the midpoint.
@@ -85,4 +87,5 @@ Tie a snug band of cordage around both arms a palm-width below the bend — a fe
 ## Variants
 
 - **Two-stick chopstick grip**: in a pinch, two stiff sticks used one-in-each-hand move coals fine; tongs just free your other hand.
+- **Carved collar (no cordage)**: instead of the cordage stop-band, cut a short stick with a shallow notch near each end, squeeze the arms slightly together, and seat the collar across both arms a palm-width below the bend — the arms' own spring locks it in place. Knock the collar off to let the tongs open wide.
 - **Forked-tip tongs**: leave a small natural fork at each tip to cradle round objects like pots and stones.

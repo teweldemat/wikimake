@@ -24,6 +24,10 @@ This article describes a simple pit method that can be done with Level 0 tools.
 
 - Fire source: [Make Fire (Hand Drill)](/articles/make-fire-hand-drill)
 
+## Diagram
+
+![Charcoal pit vent control stages](/diagrams/fuel/charcoal-vent-stages.svg)
+
 ## Materials
 
 - Dry wood (thumb-thick to wrist-thick pieces work well)
@@ -79,6 +83,19 @@ Good charcoal pieces are:
 - Light for their size
 - Crisp/brittle with a ringing snap
 - Burning hot with little flame and less smoke than raw wood
+
+Quick field check, piece by piece, when sorting a batch:
+
+1. **Snap it**: a crisp break with a sharp "clink" = done; bends, tears, or breaks dully = raw.
+2. **Look at the broken face**: black to the center = done; brown core = under-charred — set aside to re-char with the next batch.
+3. **Heft it**: surprisingly light = done; heavy = wet or still wood inside.
+4. **Rub it**: good charcoal leaves a clean black drawing mark on stone or skin.
+
+## Storage
+
+- Store charcoal dry: off the ground on a bark platform or flat stones, covered with bark slabs against rain. A bark-lined, bark-covered pit also works — recheck it after storms.
+- Damp charcoal lights poorly and steals furnace heat. If a batch gets wet, dry the pieces beside a fire before any smelting work.
+- Keep the store away from spark-throwing fires; charcoal lights eagerly.
 
 ## Safety
 

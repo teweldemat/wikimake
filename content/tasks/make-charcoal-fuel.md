@@ -5,11 +5,13 @@ slug: "make-charcoal-fuel"
 
 ## Next
 
-- [ ] Add a diagram for vent control stages.
-- [ ] Add a quick field checklist for “done charring vs still raw wood”.
-- [ ] Add notes on storage methods to keep charcoal dry.
+- (none right now)
 
 ## Done
+
+- [x] Add a diagram for vent control stages.
+- [x] Add a quick field checklist for “done charring vs still raw wood”.
+- [x] Add notes on storage methods to keep charcoal dry.
 
 - [x] Initial article draft exists.
 - [x] Add a "Terms used in this article" section (charring, volatiles, yield).

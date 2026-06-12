@@ -5,10 +5,12 @@ slug: "make-fire-hand-drill"
 
 ## Next
 
-- [ ] Add a small “materials selection” table with observable properties (hardness, resin, grain) not species names.
-- [ ] Add a wind/moisture mitigation subsection (how to keep tinder dry while drilling).
+- (none right now)
 
 ## Done
+
+- [x] Add a small “materials selection” table with observable properties (hardness, resin, grain) not species names.
+- [x] Add a wind/moisture mitigation subsection (how to keep tinder dry while drilling).
 
 - [x] Initial article draft exists.
 - [x] Add an SVG diagram (and any PNG render must be generated from the SVG source).

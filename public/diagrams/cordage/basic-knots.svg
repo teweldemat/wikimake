@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 864">
   <defs>
     <style>
       .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
@@ -66,4 +66,30 @@
   <text class="label" x="486" y="548">flat interlocked U-bends = correct</text>
   <text class="label" x="700" y="424">ends exit side by side</text>
   <path class="thin" d="M 760 430 L 790 452" />
+
+  <!-- Panel 5: Overhand loop -->
+  <rect class="panel" x="28" y="598" width="424" height="248" rx="14" />
+  <text class="head" x="46" y="626">5) Overhand loop (fixed loop)</text>
+  <path class="line" d="M 75 778 L 150 742" />
+  <path class="line" d="M 75 762 L 150 730" />
+  <circle class="line" cx="186" cy="722" r="26" />
+  <path class="line" d="M 210 736 C 268 758, 296 794, 268 812 C 240 826, 204 794, 206 752" />
+  <text class="label" x="46" y="672">both strands (the bight)</text>
+  <path class="thin" d="M 116 678 L 108 740" />
+  <text class="label" x="300" y="790">the loop: does not slide</text>
+  <path class="thin" d="M 294 786 L 276 790" />
+
+  <!-- Panel 6: vocabulary -->
+  <rect class="panel" x="468" y="598" width="424" height="248" rx="14" />
+  <text class="head" x="486" y="626">Words used for rope work</text>
+  <path class="line" d="M 500 668 L 750 668" />
+  <path class="thin" d="M 750 668 L 800 660" />
+  <text class="label" x="500" y="652">standing part</text>
+  <text class="label" x="760" y="646">working end</text>
+  <path class="line" d="M 520 740 C 560 700, 620 700, 660 740" />
+  <text class="label" x="560" y="766">bight (no crossing)</text>
+  <path class="line" d="M 720 744 C 700 716, 724 692, 752 704 C 780 716, 772 744, 744 740" />
+  <path class="line" d="M 744 740 L 790 752" />
+  <path class="line" d="M 720 744 L 700 756" />
+  <text class="label" x="690" y="786">loop (crossed)</text>
 </svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .dashed { fill: none; stroke: #67d6c2; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 6 5; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
+      .pt { fill: #e6c36a; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 15px; font-weight: 800; }
+      .head { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+      .dot { fill: #e6c36a; }
+    </style>
+  </defs>
+
+  <text class="title" x="46" y="48">90° from lengths (3-4-5) and splitting any angle in half</text>
+
+  <!-- Panel 1: 3-4-5 -->
+  <rect class="panel" x="28" y="70" width="424" height="390" rx="14" />
+  <text class="head" x="46" y="98">1) 3-4-5 triangle → 90°</text>
+
+  <path class="line" d="M 90 400 L 370 400" />
+  <path class="line" d="M 90 400 L 90 190" />
+  <path class="line" d="M 90 190 L 370 400" />
+  <!-- right angle mark -->
+  <path class="thin" d="M 90 374 L 116 374 L 116 400" />
+  <!-- points -->
+  <circle class="dot" cx="90" cy="400" r="5" />
+  <circle class="dot" cx="370" cy="400" r="5" />
+  <circle class="dot" cx="90" cy="190" r="5" />
+  <text class="pt" x="66" y="424">A</text>
+  <text class="pt" x="376" y="424">B</text>
+  <text class="pt" x="66" y="184">C</text>
+  <!-- side labels -->
+  <text class="label" x="218" y="426">4 units</text>
+  <text class="label" x="102" y="300">3 units</text>
+  <text class="label" x="240" y="280">5 units</text>
+  <text class="label" x="46" y="150">move C until BC measures exactly 5 →</text>
+  <text class="label" x="46" y="168">the corner at A is a true right angle</text>
+
+  <!-- Panel 2: bisection -->
+  <rect class="panel" x="468" y="70" width="424" height="390" rx="14" />
+  <text class="head" x="486" y="98">2) Bisect: split an angle in half</text>
+
+  <!-- the angle -->
+  <path class="line" d="M 530 400 L 870 400" />
+  <path class="line" d="M 530 400 L 621 200" />
+  <circle class="dot" cx="530" cy="400" r="5" />
+  <text class="pt" x="508" y="424">A</text>
+
+  <!-- arc from A crossing both legs at D and E -->
+  <path class="thin" d="M 660 400 A 130 130 0 0 0 591 286" />
+  <circle class="dot" cx="660" cy="400" r="5" />
+  <circle class="dot" cx="591" cy="286" r="5" />
+  <text class="pt" x="664" y="382">D</text>
+  <text class="pt" x="566" y="276">E</text>
+
+  <!-- small arcs from D and E crossing at F -->
+  <path class="thin" d="M 706 286 C 722 280, 740 278, 758 280" />
+  <path class="thin" d="M 716 248 C 728 260, 736 274, 740 290" />
+  <circle class="dot" cx="731" cy="280" r="5" />
+  <text class="pt" x="740" y="270">F</text>
+
+  <!-- bisector -->
+  <path class="dashed" d="M 530 400 L 800 240" />
+  <text class="label" x="486" y="150">same-radius arcs from D and E cross at F;</text>
+  <text class="label" x="486" y="168">the line A–F splits the angle into two equal halves</text>
+</svg>

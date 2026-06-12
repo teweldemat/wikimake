@@ -20,6 +20,10 @@ At low tech, you usually do not need “exact” degrees. What you *do* need is 
 
 - None (Level 0).
 
+## Diagram
+
+![3-4-5 right angle and angle bisection](/diagrams/measure/angle-345-and-bisection.svg)
+
 ## Tools and materials (natural / Level 0)
 
 - A straight stick (for a straightedge)
@@ -71,6 +75,13 @@ If you cannot draw arcs cleanly, you can “step” the same stick length around
 
 - Prefer descriptions like **“shallow / moderate / steep”** and “between 45° and 60°”.
 - If you include degrees, add a reference like: “(about 60°; see [Measure Angles Without Tools](/articles/measure-angles-without-tools)).”
+
+Author vocabulary (use these words consistently across articles):
+
+- **Shallow** = under 30° — e.g. a tuyere's downward tilt (10° to 20°).
+- **Moderate** = 30° to 60° — e.g. an awl tip's cone.
+- **Steep** = over 60° — e.g. a near-upright strike.
+- Give ranges between references ("between 45° and 60°") rather than false-precision single numbers, and anchor at least one number to a reference angle from this article.
 
 ## Verification
 

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .dashed { fill: none; stroke: #67d6c2; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 6 5; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
+      .head { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+    </style>
+  </defs>
+
+  <text class="title" x="46" y="48">2-ply reverse wrap (teal = motion)</text>
+
+  <!-- Panel 1: twist away -->
+  <rect class="panel" x="28" y="70" width="424" height="340" rx="14" />
+  <text class="head" x="46" y="98">1) Twist the right strand away from you</text>
+
+  <!-- finished cord (textured) -->
+  <path class="line" d="M 60 250 L 170 250" />
+  <path class="thin" d="M 78 242 L 90 258" />
+  <path class="thin" d="M 100 242 L 112 258" />
+  <path class="thin" d="M 122 242 L 134 258" />
+  <path class="thin" d="M 144 242 L 156 258" />
+  <text class="label" x="56" y="288">finished cord</text>
+
+  <!-- fork into two strands -->
+  <path class="thin" d="M 170 250 C 230 226, 290 204, 350 190" />
+  <path class="line" d="M 170 250 C 230 274, 290 292, 360 300" />
+  <text class="label" x="328" y="170">other strand (waits)</text>
+
+  <!-- twist arrows around right strand -->
+  <path class="dashed" d="M 252 262 C 268 254, 276 270, 262 280" />
+  <path class="dashed" d="M 268 276 L 260 281 L 266 288" />
+  <path class="dashed" d="M 312 278 C 328 270, 336 286, 322 296" />
+  <path class="dashed" d="M 328 292 L 320 297 L 326 304" />
+  <text class="label" x="220" y="346">twist away until it wants to kink</text>
+
+  <!-- Panel 2: wrap toward -->
+  <rect class="panel" x="468" y="70" width="424" height="340" rx="14" />
+  <text class="head" x="486" y="98">2) Wrap it over the other strand, toward you</text>
+
+  <!-- the two strands swapping position -->
+  <path class="thin" d="M 510 250 C 560 226, 620 210, 700 206 C 760 204, 800 220, 830 250" />
+  <path class="line" d="M 510 250 C 560 276, 620 292, 690 288 C 760 282, 800 250, 818 212" />
+  <path class="line" d="M 806 226 L 818 212 L 824 230" />
+
+  <!-- motion arc -->
+  <path class="dashed" d="M 700 320 C 760 312, 800 290, 822 252" />
+  <path class="dashed" d="M 818 268 L 824 250 L 806 254" />
+  <text class="label" x="486" y="332">the twisted strand crosses over</text>
+  <text class="label" x="486" y="352">and becomes the new left strand</text>
+  <text class="label" x="486" y="386">repeat: twist away, wrap toward — the twists lock</text>
+</svg>

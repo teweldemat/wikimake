@@ -72,6 +72,15 @@ Roasting often improves reduction behavior and makes ore easier to crush.
 
 Do not smother the furnace with too much ore at once.
 
+Example first-run schedule (knee-high furnace):
+
+| When | Action |
+| --- | --- |
+| Start | fill with charcoal, light, blow steadily until the bed glows through (30 to 60 min) |
+| Every ~10 min | add 1 handful of crushed ore covered by 2 to 3 double-handfuls of charcoal (about 1 part ore to 3 parts charcoal by volume) |
+| After 6 to 10 ore additions | stop adding ore; keep topping up charcoal only |
+| Final 30 to 45 min | charcoal only with steady blast, then let the fire die down on its own |
+
 ### 4) Maintain hot reducing conditions
 
 1. Keep strong heat and steady airflow.
@@ -94,6 +103,7 @@ Repeat batches to accumulate enough copper for a tool blank.
 - Prills are metallic copper color (often reddish to orange-brown after cleaning).
 - Prills flatten under hammering instead of shattering.
 - Collected prills can be consolidated by reheating and hammering.
+- Rough yield check: a double-handful of rich, well-sorted oxide ore should give at least a thumbnail-sized cluster of prills (very roughly a twentieth of the ore's weight). Repeatedly getting less means ore sorting, crushing fineness, heat, or airflow needs improving.
 
 ## Safety
 
@@ -109,6 +119,6 @@ Repeat batches to accumulate enough copper for a tool blank.
 
 ## Variants
 
-- **Multiple re-smelts**: re-smelt slag and low-grade residues to recover additional copper.
+- **Multiple re-smelts**: re-smelt slag and low-grade residues to recover additional copper. Re-smelt a piece of slag when any of these hold: green/blue staining shows on freshly broken faces, metallic specks glint in the break, or it feels clearly heavier than same-sized pieces. Crush it coarse and feed it with the next batch's ore. Glassy, light, clean-breaking slag is spent — discard it away from camp.
 - **Bowl furnace method**: lower throughput but simpler construction.
 

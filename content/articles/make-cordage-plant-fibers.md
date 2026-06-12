@@ -22,6 +22,10 @@ Cordage (string/rope) is a force-multiplier: it enables binding, carrying, traps
 
 - None (Level 0).
 
+## Diagram
+
+![Reverse-wrap: twist away, wrap toward](/diagrams/cordage/reverse-wrap.svg)
+
 ## Materials
 
 - **Fiber source**: long, tough plant fibers. Options include:
@@ -74,11 +78,19 @@ Stagger splices so both strands do not get thick at the same spot.
 2. Pull hard along the length to set the twist.
 3. If it loosens, add more twist and keep tighter tension while wrapping.
 
+## Water exposure
+
+- Most plant cordage loses strength when soaked — grass cords most, bast cords least. Plan for it on fishing lines and anything left out in rain.
+- Wet cordage stretches: a tie that was tight will sag. Re-snug knots and lashings after their first soaking.
+- Dry wet cordage slowly under light tension (hang it with a small stone on the end). Drying fast beside a fire makes it brittle.
+- Inspect water-worked lines before each use; retire a line at the first broken ply.
+
 ## Verification
 
 - **Evenness**: the cord thickness is fairly consistent.
-- **Strength**: a short sample should hold your body weight when you pull on it with both hands (do not wrap around fingers).
 - **Twist lock**: if you relax tension briefly, it does not immediately unravel.
+- **Line standard** (fishing line, light ties): a sample holds your hardest steady two-handed pull without creaking, visibly thinning, or breaking.
+- **Rope standard** (weight-bearing): a sample holds your full body weight, applied gradually and then with a small bounce. Test over soft ground, and never wrap cord around fingers.
 
 ## Safety
 

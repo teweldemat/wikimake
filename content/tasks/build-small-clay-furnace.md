@@ -5,10 +5,12 @@ slug: "build-small-clay-furnace"
 
 ## Next
 
-- [ ] Add expected dry-time ranges by climate/humidity.
-- [ ] Add a variant using two tuyeres.
+- (none right now)
 
 ## Done
+
+- [x] Add expected dry-time ranges by climate/humidity.
+- [x] Expand the two-tuyere variant (placement, angle, when to convert).
 
 - [x] Initial article draft exists.
 - [x] Add cross-section schematic diagram.

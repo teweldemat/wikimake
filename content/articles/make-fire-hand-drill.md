@@ -38,6 +38,23 @@ Pick **dry** dead wood that is not punky (crumbly/rotted) and not resin-soaked.
 
 Good beginner pairings often use a slightly softer hearth with a spindle that is not dramatically harder. If your dust is pale and fluffy, you are probably polishing instead of charring; switch to a different wood pair.
 
+Selection table (observable properties, not species):
+
+| Property | How to test | Spindle wants | Hearth wants |
+| --- | --- | --- | --- |
+| Dryness | snaps cleanly, no green smell, no cool damp feel | fully dry | fully dry |
+| Hardness | press your thumbnail into it | medium: nail marks it with firm pressure | slightly softer: nail marks it easily |
+| Resin | smell a fresh break; look for sticky beads | none | none |
+| Soundness | crush an edge between fingers | firm (not punky/crumbly) | firm (not punky/crumbly) |
+| Shape | sight down its length | straight, knot-free, even thickness | flat enough to pin without rocking |
+
+### Wind and damp
+
+- Work in a wind shadow — behind a boulder, a bank, or your own body placed upwind of the notch. In open wind, dig a shallow pit and kneel over it.
+- Keep the tinder bundle against your body or under bark until the coal is mature; never set it on bare damp ground.
+- In damp conditions, set the hearth on a slab of dry bark and stage spare dry dust-pan chips.
+- In drizzle, prepare everything under cover; if you cannot keep tinder dry, postpone — a coal with nowhere to go is wasted effort.
+
 ### Tinder
 
 Tinder needs to catch from a small coal. Use the driest, finest material you can find:

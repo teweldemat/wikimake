@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .dashedthin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-dasharray: 6 5; stroke-linecap: round; }
+      .dashed { fill: none; stroke: #67d6c2; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 6 5; }
+      .stone { fill: #2f3642; stroke: #b4c0cb; stroke-width: 2; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+      .good { fill: #67d6c2; }
+      .bad { stroke: #e6c36a; stroke-width: 3; fill: none; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect class="panel" x="24" y="24" width="872" height="412" rx="18" />
+  <text class="title" x="50" y="60">Strike near the edge, at a glancing angle (45° to 70°)</text>
+
+  <!-- Core -->
+  <path class="stone" d="M 300 200 L 560 200 L 610 280 L 530 380 L 350 380 L 270 280 Z" />
+  <text class="label" x="430" y="330">core</text>
+  <text class="label" x="600" y="186">platform (flat top)</text>
+  <path class="thin" d="M 594 190 L 540 198" />
+
+  <!-- platform reference line -->
+  <path class="dashedthin" d="M 300 200 L 170 200" />
+
+  <!-- Hammerstone + strike path -->
+  <circle class="stone" cx="180" cy="100" r="30" />
+  <text class="label" x="232" y="92">hammerstone</text>
+  <path class="thin" d="M 226 94 L 212 98" />
+  <path class="dashed" d="M 200 122 C 238 150, 266 172, 290 192" />
+  <path class="dashed" d="M 274 188 L 292 194 L 284 176" />
+
+  <!-- angle wedge between strike path and platform line -->
+  <path class="thin" d="M 258 200 A 44 44 0 0 1 270 174" />
+  <text class="label" x="186" y="160">45°–70°</text>
+  <path class="thin" d="M 232 156 L 254 180" />
+
+  <!-- strike points -->
+  <circle class="good" cx="308" cy="200" r="7" />
+  <text class="label" x="340" y="252">strike here,</text>
+  <text class="label" x="340" y="270">near the edge</text>
+  <path class="thin" d="M 352 242 L 314 210" />
+
+  <path class="bad" d="M 444 188 L 466 210" />
+  <path class="bad" d="M 466 188 L 444 210" />
+  <text class="label" x="486" y="226">not the center of a flat face</text>
+  <path class="thin" d="M 480 220 L 470 206" />
+
+  <!-- detached flake -->
+  <path class="thin" d="M 290 212 C 262 252, 258 300, 278 338 L 300 330 C 284 296, 288 252, 306 218 Z" />
+  <text class="label" x="120" y="320">flake detaches with</text>
+  <text class="label" x="120" y="338">a long sharp edge</text>
+  <path class="thin" d="M 250 326 L 272 316" />
+  <path class="thin" d="M 264 356 L 264 392" />
+  <path class="thin" d="M 257 384 L 264 392 L 271 384" />
+
+  <!-- footer -->
+  <text class="label" x="50" y="420">a glancing blow peels a flake; a square-on blow just crushes</text>
+</svg>

@@ -5,11 +5,13 @@ slug: "smelt-copper-prills"
 
 ## Next
 
-- [ ] Add a beginner charge schedule example (time + handful counts).
-- [ ] Add a simple recovery metric (prill mass/volume from known ore input).
-- [ ] Add explicit criteria for when to re-smelt slag.
+- (none right now)
 
 ## Done
+
+- [x] Add a beginner charge schedule example (time + handful counts).
+- [x] Add a simple recovery metric (prill yield from known ore input).
+- [x] Add explicit criteria for when to re-smelt slag.
 
 - [x] Initial article draft exists.
 - [x] Add a plain-language "How smelting works" section (reduction explained for readers with no chemistry).

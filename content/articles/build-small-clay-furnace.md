@@ -89,6 +89,14 @@ The downward angle helps focus heat near the reaction zone and reduces backflow.
 
 Do not full-fire while wet, or the furnace may steam-crack.
 
+Typical drying times before pre-firing (thumb-thick walls; two-finger walls take longer):
+
+- **Hot, dry, breezy weather**: 2 to 4 days to leather-hard, then 3 to 5 more days.
+- **Mild weather**: about a week to leather-hard, 1 to 2 weeks total.
+- **Cool or humid weather**: 2 to 4 weeks total; the small warming fires matter much more.
+
+When in doubt, wait longer — steam cracks destroy more furnaces than patience does.
+
 ### 6) Pre-fire before production use
 
 1. Run a stronger charcoal fire for 1 to 2 hours.
@@ -117,5 +125,5 @@ Do not full-fire while wet, or the furnace may steam-crack.
 ## Variants
 
 - **Pit furnace**: below-grade bowl with side tuyere (simpler, usually lower output).
-- **Two-tuyere furnace**: better heat distribution, more complex airflow control.
+- **Two-tuyere furnace**: two tuyeres at the same height, about a third of the way around from each other (never directly facing, or the blasts fight), both angled 10° to 20° down. The hot zone grows and heats more evenly, but it needs two people blowing (or disciplined alternating) and burns charcoal faster. Build and master the single-tuyere version first; convert only if one side of your charge keeps coming out unreacted.
 

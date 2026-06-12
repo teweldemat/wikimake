@@ -1,7 +1,7 @@
 ---
 title: "Tie Basic Knots"
 slug: "tie-basic-knots"
-summary: "Tie and test the four knots most early tools need: overhand knot, half-hitch, two half-hitches, and square knot."
+summary: "Tie and test the five knots most early tools need: overhand knot, half-hitch, two half-hitches, square knot, and overhand loop."
 order: 1
 tech_level: 1
 prereqs:
@@ -10,7 +10,7 @@ prereqs:
 
 ## Summary
 
-A knot lets a cord grip itself, another cord, or an object. Almost every early tool that uses cordage — fishing lines, bindings, handles, shelters — depends on a few simple knots. This article teaches four knots that cover most needs, plus the words used to describe rope work so other articles make sense.
+A knot lets a cord grip itself, another cord, or an object. Almost every early tool that uses cordage — fishing lines, bindings, handles, shelters — depends on a few simple knots. This article teaches five knots that cover most needs, plus the words used to describe rope work so other articles make sense.
 
 ## Terms used in this article
 
@@ -73,12 +73,33 @@ Use it to tie two ends of similar thickness together — closing a bundle, joini
 
 If it instead looks twisted and slips when pulled, you crossed the same way twice (a "granny knot"); untie and redo.
 
+### 5) Overhand loop (a fixed loop)
+
+Use it to put a permanent loop in a cord: hanging tools, anchoring a line over a stub, or making a toggle attachment (loop over a short stick).
+
+1. Fold a bight near the end of the cord.
+2. Tie an overhand knot (step 1) using the doubled cord — the bight acts as the working end.
+3. Pull the loop and both strands tight.
+
+The loop does not slide. It jams hard after heavy load; plan to cut it rather than pick it open.
+
+## Choosing a knot
+
+| Knot | Best for | Avoid for |
+| --- | --- | --- |
+| Overhand | stopping a cord end from fraying or slipping through a hole | joining cords (it jams and weakens them) |
+| Half-hitch | a quick temporary hold; the building block of other hitches | anything load-bearing on its own |
+| Two half-hitches | tying a line to poles, stakes, or its own standing part under steady load | very slick, stiff cord unless snugged hard |
+| Square knot | joining two ends of similar cord; closing bundles and wraps | cords of different thickness; anything life-critical |
+| Overhand loop | a fixed loop for toggles, hanging, anchoring | loops you will need to untie after heavy load |
+
 ## Verification
 
 - Each knot holds when you pull hard in the direction of normal load.
 - The overhand knot does not slide off the end.
 - Two half-hitches tighten (not loosen) when the standing part is loaded.
 - The square knot lies flat and symmetric; a hard pull does not make it slip or capsize.
+- The overhand loop keeps its size under load and does not slide along the cord.
 
 ## Safety
 

@@ -68,6 +68,15 @@ If two crossing sticks are being lashed, wrap around the cross both ways, then a
 1. Pull and twist the bound parts against each other hard, harder than expected use.
 2. The wraps must not slide along the object or open gaps between turns.
 
+## Wrap counts by job
+
+| Job | Wraps | Notes |
+| --- | --- | --- |
+| Line to a gorge hook | 8–12 | finish with two half-hitches on the standing part |
+| Stone sinker to a line | 6–10 | seat the wraps in a scraped groove so they cannot slide |
+| Tool head to handle (hafting) | 15–25 | add 2–3 frapping turns; retighten after the first real use |
+| Stick-to-stick cross | 8–10 each direction | then 2–3 frapping turns between the sticks, pulled brutally tight |
+
 ## Verification
 
 - The band of wraps is even, touching, and does not shift under a hard pull.

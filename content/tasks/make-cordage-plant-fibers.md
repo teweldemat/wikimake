@@ -5,11 +5,13 @@ slug: "make-cordage-plant-fibers"
 
 ## Next
 
-- [ ] Add an SVG diagram for reverse-wrap (twist/wrap directions).
-- [ ] Add “water exposure” notes (how different fibers behave when wet and after drying).
-- [ ] Add a standard test: minimum acceptable strength for “line” vs “rope”.
+- (none right now)
 
 ## Done
+
+- [x] Add an SVG diagram for reverse-wrap (twist/wrap directions).
+- [x] Add “water exposure” notes (how fibers behave when wet and after drying).
+- [x] Add a standard test: minimum acceptable strength for “line” vs “rope”.
 
 - [x] Initial article draft exists.
 - [x] Add a "Terms used in this article" section (bast, pith, ply, splice, braid).

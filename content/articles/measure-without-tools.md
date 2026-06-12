@@ -16,6 +16,10 @@ This article defines a small set of body-based units and a simple way to make a 
 
 - None (Level 0).
 
+## Diagram
+
+![Body units drawn to scale](/diagrams/measure/body-units.svg)
+
 ## Units (choose a set and stick to it)
 
 Pick a small set you will use everywhere:
@@ -28,6 +32,17 @@ Pick a small set you will use everywhere:
 - **Pace**: one normal step (good for distances and layouts).
 
 Rule: avoid mixing units casually. If you write “arm-length” in one place, use “arm-length” again, not centimeters.
+
+Rough modern equivalents, to sanity-check yourself (adult ranges; your own values will differ but stay consistent):
+
+| Unit | Typical range |
+| --- | --- |
+| Finger width | 1.5 to 2 cm |
+| Thumb width | 2 to 2.5 cm |
+| Palm width | 7 to 10 cm |
+| Handspan | 18 to 23 cm |
+| Cubit (elbow to fingertips) | 42 to 52 cm |
+| Pace (one step) | 60 to 80 cm |
 
 ## Steps
 

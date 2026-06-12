@@ -60,6 +60,8 @@ Do not push past these signs — cracks that grow deep cannot be healed by annea
 2. Watch from shade if the day is bright: you are waiting for the metal to show a **dull red glow**.
 3. Hold it at that glow for a slow count of ten. There is no need to get it brighter; bright orange risks melting small pieces.
 
+Backup cues when the light is too bright to judge color: a dry grass stem or thin wood sliver touched to the metal should char black within a breath or two, and your palm held a handspan above the piece should sting with heat immediately. If both happen, the piece is at or near annealing heat.
+
 ### 3) Cool
 
 Either way works for copper:
@@ -75,7 +77,15 @@ The copper should now dent and spread easily again. Work until it stiffens, then
 
 - Before annealing: a test blow bounces; the metal resists.
 - After annealing: the same test blow leaves a clear dent and the metal feels "dead" (no spring).
-- A properly annealed strip bends easily and stays bent; a work-hardened strip resists and springs back.
+
+### The bend test
+
+Worth doing until you trust your eye — it is also the whole work-hardening lesson in miniature:
+
+1. Hammer a scrap of the same copper into a thin strip, finger-length and grass-blade thin at one end.
+2. Right after annealing it, bend the thin end with your fingers: it should fold easily and **stay folded**.
+3. Bend it back and forth a few more times at the same spot: feel it stiffen with each bend — that stiffening is work-hardening happening in your hand. Keep going and it snaps.
+4. Anneal the strip and bend again: soft again. This cycle is exactly what happens to the tool you are forging.
 
 ## Safety
 

@@ -75,6 +75,14 @@ Target shape:
 - Tip: sharp but not needle-fragile
 - Body: straight and gradually tapering
 
+Target geometry by use (angles: [Measure Angles Without Tools (Degrees)](/articles/measure-angles-without-tools)):
+
+| Tool | Overall length | Tip | Shaft |
+| --- | --- | --- | --- |
+| Awl (general piercing) | about a finger-length | sturdy cone, moderate point (about 30°–45°) | half a finger-width, tapering smoothly |
+| Scribe (marking wood/clay) | a finger-length or a bit more | fine point (about 20°–30°) | slimmer than an awl; expect to resharpen often |
+| Punch (heavy piercing) | half to two-thirds of a finger-length | stout point (about 60°–90°) | thickest of the three; short means stiff |
+
 ### 4) Straighten and finish
 
 1. Lightly hammer along the shaft on a flat stone to straighten.
@@ -86,6 +94,16 @@ Target shape:
 1. Split a small stick.
 2. Seat the thick end of awl in the split.
 3. Lash tightly with cordage (technique: [Lash Objects Together (Cordage)](/articles/lash-objects-with-cordage)).
+
+## Maintenance and repair
+
+Copper is soft; treat sharpening and straightening as routine care, not failure.
+
+- **Dull tip**: rub on a fine-grained wet stone while rotating the shaft, then set the edge with a few light cold taps.
+- **Bent shaft** (usually from prying — avoid prying): anneal, straighten with light blows on a flat stone, re-harden only the tip with gentle cold hammering.
+- **Cracked or crumbled tip**: grind or cut back past the damage, anneal, and reforge the taper. The tool gets shorter each time; that is normal.
+
+What to expect over a tool's life: the tip dulls after sessions of heavy piercing and needs regular touch-up; the most common failure is a bent tip from side-loading, the second is a mushroomed butt if you hammer on the awl (use a punch for struck work). A finger-length awl typically survives many re-sharpenings before it is too short and gets reforged into a punch.
 
 ## Verification
 

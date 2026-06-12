@@ -42,6 +42,16 @@ Not all green rocks are useful copper ore. This article shows how to identify pr
 - Old stream cuts and gullies below mineralized outcrops
 - Rubble at the base of weathered rock faces
 
+### Quick reference: promising signs vs false positives
+
+| What you see | Verdict | Quick check |
+| --- | --- | --- |
+| Vivid green/blue crusts, stains, or veins in dense rock | **Promising** | Heavy for its size; color continues *into* the rock; rubbing the wetted rock on a pale stone leaves a green/blue streak |
+| Green coating that scrapes off in soft flakes | Algae, lichen, or moss | Organic films peel off; the rock underneath is plain |
+| Rock that is dull green all the way through, uniform, soapy feel | Likely a green rock type, not ore | No blue companion stains; streak on pale stone is whitish, not green |
+| Rusty red/brown staining only | Iron stains — but search nearby | Copper zones often sit close to rusty zones; look for green/blue pockets in the same exposure |
+| Glassy dark lumps near old camps or burnt ground | Possibly old slag | Worth testing — slag from past smelting can still carry metal |
+
 ## Steps
 
 ### 1) Collect candidates
@@ -49,6 +59,14 @@ Not all green rocks are useful copper ore. This article shows how to identify pr
 1. Pick several rock samples with visible green/blue mineralization.
 2. Prefer dense/heavy pieces over crumbly dirt-like pieces.
 3. Keep samples separated and labeled by location.
+
+For each sample, log (scratch marks on a bark slab, notches on a tally stick, or a memorized landmark story):
+
+- **Where**: nearest landmark + paces and direction from it ([Measure Without Tools (Body Units)](/articles/measure-without-tools))
+- **What**: color, crust vs vein, heavy or light for its size
+- **Test result** (filled in after step 4): beads / specks / nothing, and roughly how hot and long the test ran
+
+Re-finding a good source later matters more than any single sample.
 
 ### 2) Crush small samples
 
@@ -84,8 +102,9 @@ If all residue is brittle black/green slag with no malleable metal, ore grade ma
 ## Safety
 
 - Some ores may contain harmful elements (including arsenic). Avoid breathing dust/fumes.
-- Crush and test outdoors with wind carrying fumes away from you.
-- Keep food/water away from ore dust.
+- **A garlic smell while heating is an arsenic warning.** Step upwind immediately, let the fire die, and discard that sample and its residue away from camp. Do not smelt ore that smells of garlic when hot.
+- Crush samples slightly damp (sprinkle water) to keep dust down, and always outdoors with the wind carrying dust and fumes away from you and from camp.
+- Treat all test residues as waste: keep them away from food, water sources, and sleeping areas, and rinse your hands after handling ore.
 
 ## Troubleshooting
 

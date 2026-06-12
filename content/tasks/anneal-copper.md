@@ -5,10 +5,12 @@ slug: "anneal-copper"
 
 ## Next
 
-- [ ] Add a second heat cue besides glow color (radiated heat / spit test).
-- [ ] Add the bend-test demonstration as a formal verification step.
+- (none right now)
 
 ## Done
+
+- [x] Add a second heat cue besides glow color (char-stick and palm-heat cues).
+- [x] Add the bend-test demonstration as a formal verification step.
 
 - [x] Initial article draft exists.
 - [x] Add a schematic SVG diagram (anneal cycle with color cue).
