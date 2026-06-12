@@ -41,15 +41,16 @@
   <text class="label" x="542" y="300">Slag/prill zone</text>
   <path class="thin" d="M 534 296 L 452 332" />
 
-  <!-- Tuyere -->
-  <path class="line" d="M 210 286 L 314 258" />
-  <rect class="fill-char" x="212" y="278" width="110" height="14" rx="6" transform="rotate(-14 212 278)" />
+  <!-- Tuyere: passes through the clay wall into the chamber -->
+  <path class="line" d="M 210 286 L 330 256" />
+  <rect class="fill-char" x="212" y="278" width="120" height="14" rx="6" transform="rotate(-14 212 278)" />
   <text class="label" x="90" y="260">Tuyere (~10° to 20° down)</text>
   <path class="thin" d="M 248 262 L 212 270" />
 
   <!-- Air direction -->
-  <path class="thin" d="M 210 286 L 300 262" />
-  <path class="thin" d="M 292 256 L 300 262 L 294 270" />
+  <path class="thin" d="M 222 288 L 316 263" />
+  <path class="thin" d="M 308 257 L 316 263 L 310 271" />
+  <path class="thin" d="M 148 310 L 222 292" />
   <text class="label" x="82" y="316">Air blast</text>
 
   <!-- Top opening -->

@@ -5,7 +5,7 @@
       .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
       .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
       .metal { fill: #c87f52; stroke: #f2b88e; stroke-width: 1.5; }
-      .hot { fill: #e6c36a; fill-opacity: 0.9; }
+      .hot { fill: #e6c36a; fill-opacity: 0.55; }
       .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
       .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
     </style>
@@ -17,16 +17,16 @@
   <!-- Step 1 -->
   <rect class="panel" x="42" y="82" width="270" height="286" rx="14" />
   <text class="label" x="58" y="108">1) Consolidate hot prills</text>
-  <circle class="metal" cx="96" cy="168" r="10" />
-  <circle class="metal" cx="118" cy="178" r="8" />
-  <circle class="metal" cx="138" cy="166" r="9" />
-  <circle class="metal" cx="160" cy="176" r="8" />
-  <ellipse class="hot" cx="128" cy="174" rx="52" ry="24" />
+  <ellipse class="hot" cx="130" cy="228" rx="56" ry="18" />
+  <circle class="metal" cx="100" cy="232" r="9" />
+  <circle class="metal" cx="120" cy="238" r="7" />
+  <circle class="metal" cx="140" cy="228" r="9" />
+  <circle class="metal" cx="160" cy="236" r="7" />
   <rect class="thin" x="74" y="246" width="170" height="22" rx="6" />
-  <text class="label" x="78" y="240">Anvil stone</text>
-  <path class="line" d="M 238 160 L 238 220" />
-  <circle class="line" cx="238" cy="146" r="16" />
-  <text class="label" x="172" y="324">Heat -> hammer -> repeat</text>
+  <text class="label" x="78" y="290">Anvil stone</text>
+  <circle class="line" cx="238" cy="160" r="16" />
+  <path class="line" d="M 238 176 L 238 236" />
+  <text class="label" x="58" y="324">Heat, hammer, repeat</text>
 
   <!-- Arrow -->
   <path class="thin" d="M 324 220 L 358 220" />
@@ -35,12 +35,11 @@
   <!-- Step 2 -->
   <rect class="panel" x="368" y="82" width="270" height="286" rx="14" />
   <text class="label" x="384" y="108">2) Billet + anneal cycles</text>
-  <rect class="metal" x="432" y="170" width="142" height="34" rx="14" />
-  <ellipse class="hot" cx="503" cy="186" rx="82" ry="32" />
-  <path class="line" d="M 520 126 C 546 126, 564 146, 564 170" />
-  <path class="line" d="M 564 170 C 564 194, 546 212, 520 212" />
-  <path class="thin" d="M 552 126 L 564 126 L 564 138" />
-  <text class="label" x="410" y="324">When cracks start: anneal again</text>
+  <ellipse class="hot" cx="500" cy="190" rx="84" ry="34" />
+  <rect class="metal" x="432" y="172" width="140" height="36" rx="14" />
+  <path class="thin" d="M 596 152 A 38 38 0 0 1 596 228" />
+  <path class="thin" d="M 588 222 L 596 228 L 603 219" />
+  <text class="label" x="384" y="324">When cracks start: anneal again</text>
 
   <!-- Arrow -->
   <path class="thin" d="M 650 220 L 684 220" />
@@ -49,9 +48,8 @@
   <!-- Step 3 -->
   <rect class="panel" x="694" y="82" width="226" height="286" rx="14" />
   <text class="label" x="710" y="108">3) Forge point + finish</text>
-  <path class="metal" d="M 734 198 L 852 182 L 870 192 L 852 202 L 734 186 Z" />
+  <path class="metal" d="M 734 184 L 812 184 L 872 192 L 812 200 L 734 200 Z" />
   <path class="thin" d="M 724 246 L 874 246" />
   <text class="label" x="708" y="322">Cold-work tip lightly</text>
   <text class="label" x="708" y="342">for extra stiffness</text>
 </svg>
-
