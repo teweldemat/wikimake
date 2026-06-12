@@ -15,3 +15,5 @@ slug: "make-fire-hand-drill"
 - [x] Clarify the “no cutting tool” path (Level 0 method).
 - [x] Replace cm-only measurements with Level 0-friendly approximations (cm kept in parentheses for modern readers).
 - [x] Add a troubleshooting decision tree.
+- [x] Add a "Terms used in this article" section (friction fire, spindle, hearth board, coal/ember, resin-soaked wood).
+- [x] Fix diagram visual bugs (notch as pie-slice into the cup, label/spindle collisions).

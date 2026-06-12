@@ -12,4 +12,5 @@ slug: "measure-without-tools"
 ## Done
 
 - [x] Initial article draft exists.
+- [x] Link the cord-reference variant to the cordage and knots articles.
 

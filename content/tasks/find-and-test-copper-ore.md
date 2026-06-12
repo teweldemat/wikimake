@@ -12,4 +12,6 @@ slug: "find-and-test-copper-ore"
 ## Done
 
 - [x] Initial article draft exists.
+- [x] Add a "Terms used in this article" section (ore, mineralization, oxidized zone, outcrop, reduction, slag, blowpipe with construction note).
+- [x] Link the clay test cup to Fire a Clay Pinch Pot.
 

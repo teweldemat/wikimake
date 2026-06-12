@@ -12,4 +12,6 @@ slug: "make-cordage-plant-fibers"
 ## Done
 
 - [x] Initial article draft exists.
+- [x] Add a "Terms used in this article" section (bast, pith, ply, splice, braid).
+- [x] Link the overhand-knot finish to Tie Basic Knots (link only; no prereq, to avoid a circular dependency).
 
