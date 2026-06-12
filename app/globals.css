@@ -254,48 +254,48 @@ a:hover {
   background: rgba(230, 195, 106, 0.12);
 }
 
-.md {
+.prose {
   font-size: 1.06rem;
 }
 
-.md h1,
-.md h2,
-.md h3 {
+.prose h1,
+.prose h2,
+.prose h3 {
   font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
   letter-spacing: -0.02em;
   line-height: 1.15;
   margin: 1.4em 0 0.55em;
 }
 
-.md h1 {
+.prose h1 {
   font-size: clamp(2.2rem, 6vw, 3rem);
   margin-top: 0;
 }
 
-.md h2 {
+.prose h2 {
   font-size: 1.65rem;
 }
 
-.md h3 {
+.prose h3 {
   font-size: 1.25rem;
 }
 
-.md p {
+.prose p {
   margin: 0.7em 0;
   color: color-mix(in srgb, var(--ink) 92%, var(--muted) 8%);
 }
 
-.md ul,
-.md ol {
+.prose ul,
+.prose ol {
   margin: 0.7em 0;
   padding-left: 1.25em;
 }
 
-.md li {
+.prose li {
   margin: 0.35em 0;
 }
 
-.md code {
+.prose code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   font-size: 0.95em;
@@ -305,7 +305,7 @@ a:hover {
   border-radius: 10px;
 }
 
-.md pre {
+.prose pre {
   overflow: auto;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -314,13 +314,13 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
-.md pre code {
+.prose pre code {
   background: transparent;
   border: 0;
   padding: 0;
 }
 
-.md img {
+.prose img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -330,6 +330,29 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.04);
   box-shadow: var(--shadow);
+}
+
+.prose table {
+  border-collapse: collapse;
+  margin: 0.9em 0;
+  width: 100%;
+  font-size: 0.97em;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.prose tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .footer {

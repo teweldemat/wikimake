@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Markdown from "@/components/Markdown";
+import Html from "@/components/Html";
 import GitMetaLine from "@/components/GitMetaLine";
 import { getAllArticles, getArticleBySlug, getTasksBySlug } from "@/lib/content";
 
@@ -39,15 +39,14 @@ export default async function TasksPage({
   const content =
     tasks?.content ??
     [
-      "## No task list yet",
-      "",
-      `Create \`content/tasks/${slug}.md\` to track work for this article.`,
-      "",
-      "Example:",
-      "",
-      "- [ ] Add diagrams",
-      "- [ ] Add measurements / tolerances",
-      "- [ ] Add safety section",
+      "<h2>No task list yet</h2>",
+      `<p>Create <code>content/tasks/${slug}.html</code> to track work for this article.</p>`,
+      "<p>Example:</p>",
+      "<ul>",
+      '<li><input type="checkbox" disabled> Add diagrams</li>',
+      '<li><input type="checkbox" disabled> Add measurements / tolerances</li>',
+      '<li><input type="checkbox" disabled> Add safety section</li>',
+      "</ul>",
     ].join("\n");
 
   return (
@@ -82,7 +81,7 @@ export default async function TasksPage({
           </Link>
         </div>
       </header>
-      <Markdown content={content} />
+      <Html content={content} />
     </article>
   );
 }

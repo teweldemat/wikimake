@@ -5,12 +5,29 @@ import matter from "gray-matter";
 function findRepoRoot(startDir) {
   let dir = startDir;
   for (let i = 0; i < 16; i++) {
-    if (fs.existsSync(path.join(dir, "content", "index.md"))) return dir;
+    if (fs.existsSync(path.join(dir, "content", "index.html"))) return dir;
     const parent = path.dirname(dir);
     if (parent === dir) break;
     dir = parent;
   }
   return null;
+}
+
+// Content bodies are rendered with dangerouslySetInnerHTML, so they must stay
+// inert: no scripts, no inline event handlers. Also catch files that still
+// look like un-converted markdown.
+function validateBody(body, errors, filePath) {
+  if (/<script\b/i.test(body)) {
+    errors.push(`${filePath}: body must not contain <script> elements`);
+  }
+  if (/<[^>]+\son[a-z]+\s*=/i.test(body)) {
+    errors.push(`${filePath}: body must not contain inline event handlers (on*=)`);
+  }
+  if (/^(#{1,6} |!\[)/m.test(body)) {
+    errors.push(
+      `${filePath}: body looks like markdown (heading or image syntax); content must be an HTML fragment`,
+    );
+  }
 }
 
 function safeInt(v) {
@@ -73,7 +90,7 @@ function main() {
   const files = fs.existsSync(articlesDir)
     ? fs
         .readdirSync(articlesDir)
-        .filter((f) => f.endsWith(".md"))
+        .filter((f) => f.endsWith(".html"))
         .map((f) => path.join(articlesDir, f))
     : [];
 
@@ -100,8 +117,27 @@ function main() {
     }
 
     const prereqs = normalizePrereqs(parsed.data, errors, fp);
+    validateBody(parsed.content, errors, fp);
 
     bySlug.set(slug, { slug, techLevel, prereqs, filePath: fp });
+  }
+
+  // Talk/tasks pages and the two top-level pages render the same way; check
+  // their bodies too (front matter rules apply to articles only).
+  const extraFiles = [
+    path.join(repoRoot, "content", "index.html"),
+    path.join(repoRoot, "content", "contribute.html"),
+  ];
+  for (const dir of ["talk", "tasks"]) {
+    const abs = path.join(repoRoot, "content", dir);
+    if (!fs.existsSync(abs)) continue;
+    for (const f of fs.readdirSync(abs)) {
+      if (f.endsWith(".html")) extraFiles.push(path.join(abs, f));
+    }
+  }
+  for (const fp of extraFiles) {
+    if (!fs.existsSync(fp)) continue;
+    validateBody(matter(fs.readFileSync(fp, "utf8")).content, errors, fp);
   }
 
   for (const a of bySlug.values()) {

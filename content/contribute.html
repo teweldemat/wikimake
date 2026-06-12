@@ -1,0 +1,51 @@
+<h1>Contribute To Wikimake</h1>
+<p>Wikimake is a manual for rebuilding civilization from zero technology. Keep every article self-contained and reproducible.</p>
+<h2>Core rules</h2>
+<ul>
+<li>If an article references an artificial tool/material/process, that dependency must have its own internal page.</li>
+<li>Natural-world inputs must include enough detail to find, identify, and prepare them.</li>
+<li>Always state prerequisites explicitly.</li>
+<li>Keep instructions consistent with the article’s <code>tech_level</code>.</li>
+<li>Write measurable, testable steps with verification and safety notes.</li>
+</ul>
+<h2>Required article structure</h2>
+<ul>
+<li>Summary</li>
+<li>Prerequisites</li>
+<li>Steps</li>
+<li>Verification</li>
+<li>Safety</li>
+<li>Troubleshooting</li>
+<li>Variants (low-tech option first)</li>
+</ul>
+<h2>Content format rules</h2>
+<ul>
+<li>HTML fragments for text: a YAML front matter block (<code>--- ... ---</code>) followed by body HTML (<code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;img&gt;</code>). No <code>&lt;html&gt;</code>/<code>&lt;head&gt;</code>/<code>&lt;body&gt;</code> wrapper, no <code>&lt;script&gt;</code>, no inline event handlers.</li>
+<li>Internal links: <code>&lt;a href="/articles/slug"&gt;Title&lt;/a&gt;</code>. External links add <code>target="_blank" rel="noreferrer"</code>.</li>
+<li>SVG for diagrams.</li>
+<li>PNG only when rendered from an SVG source committed in-repo.</li>
+</ul>
+<h2>Writing dimensions</h2>
+<p>Primary dimensions use body units (see <a href="/articles/measure-without-tools">Measure Without Tools (Body Units)</a>); metric may follow in parentheses. Angles use the reference vocabulary from <a href="/articles/measure-angles-without-tools">Measure Angles Without Tools (Degrees)</a>.</p>
+<p>Good:</p>
+<ul>
+<li>"Spindle: <strong>4 handspans</strong> long, <strong>thumb-thick</strong> (roughly 60 to 80 cm, 1.5 to 2 cm)."</li>
+<li>"Notch opening: <strong>2 finger-widths</strong> wide at the outer edge."</li>
+<li>"Angle the tuyere <strong>shallow</strong> (about 10° to 20° down)."</li>
+</ul>
+<p>Avoid:</p>
+<ul>
+<li>"Spindle: 70 cm long" (no body-unit primary).</li>
+<li>"Cut at 52°" (false precision; say "about 45° to 60°").</li>
+<li>Mixing names for one unit ("arm-length" in one step, "cubit" in another).</li>
+</ul>
+<h2>Before you open a PR</h2>
+<ul>
+<li>Confirm all artificial dependencies are linked internally.</li>
+<li>Confirm <code>tech_level</code> is set and valid.</li>
+<li>Run local checks:</li>
+</ul>
+<pre><code class="language-bash">npm run validate
+npm run lint
+npm run build
+</code></pre>

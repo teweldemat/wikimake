@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Markdown from "@/components/Markdown";
+import Html from "@/components/Html";
 import { getAllArticles, getHomePage } from "@/lib/content";
 
 export const dynamic = "force-static";
@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <Markdown content={home.content} />
+      <Html content={home.content} />
 
       <section className="section" aria-labelledby="articles">
         <h2 id="articles">Articles</h2>

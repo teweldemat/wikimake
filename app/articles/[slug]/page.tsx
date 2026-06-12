@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Markdown from "@/components/Markdown";
+import Html from "@/components/Html";
 import GitMetaLine from "@/components/GitMetaLine";
 import { getAllArticles, getArticleBySlug } from "@/lib/content";
 
@@ -65,7 +65,7 @@ export default async function ArticlePage({
           </Link>
         </div>
       </header>
-      <Markdown content={article.content} />
+      <Html content={article.content} />
     </article>
   );
 }

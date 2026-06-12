@@ -1,4 +1,4 @@
-import Markdown from "@/components/Markdown";
+import Html from "@/components/Html";
 import { getContributePage } from "@/lib/content";
 
 export const metadata = {
@@ -9,6 +9,6 @@ export const dynamic = "force-static";
 
 export default function ContributePage() {
   const contribute = getContributePage();
-  return <Markdown content={contribute.content} />;
+  return <Html content={contribute.content} />;
 }
 

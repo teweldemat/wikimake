@@ -29,7 +29,10 @@ Run `npm run validate` before merging; it enforces `tech_level` and checks that 
 
 ## Content and assets
 
-- Content formats: plain text + SVG. PNGs are allowed only if they are rendered from SVG sources (no hand-edited PNG-only diagrams).
+- Content formats: HTML fragments + SVG. PNGs are allowed only if they are rendered from SVG sources (no hand-edited PNG-only diagrams).
+- Each content file (`content/{articles,talk,tasks}/<slug>.html`, plus `content/index.html` and `content/contribute.html`) is a YAML front matter block (`--- ... ---`) followed by an HTML *fragment* (no `<html>`/`<head>`/`<body>` wrapper): `<h2>` section headings, `<p>`, `<ul>`/`<ol>`, `<table>`, `<img>`.
+- Internal links are plain anchors: `<a href="/articles/slug">Title</a>`. External links must add `target="_blank" rel="noreferrer"`.
+- Bodies must stay inert: no `<script>` elements and no inline event handlers (`on*=`); `npm run validate` enforces this.
 - Keep assets in-repo (no externally hosted images/diagrams that the wiki depends on).
 - Prefer internal links for all referenced tools/materials/processes; avoid circular dependencies.
 
@@ -51,6 +54,7 @@ Run `npm run validate` before merging; it enforces `tech_level` and checks that 
 - `tech_level` is present and prerequisites (when artificial) are at lower tech levels.
 - Steps are actionable and include units where it matters.
 - Any PNGs are generated from SVG sources and the SVG is committed.
+- Content bodies are valid HTML fragments with no scripts or event handlers.
 - No external dependencies for content rendering (the wiki remains buildable/deployable from the repo alone).
 
 ## Deployment (Vercel)

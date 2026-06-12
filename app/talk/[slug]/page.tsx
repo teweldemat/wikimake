@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Markdown from "@/components/Markdown";
+import Html from "@/components/Html";
 import GitMetaLine from "@/components/GitMetaLine";
 import { getAllArticles, getArticleBySlug, getTalkBySlug } from "@/lib/content";
 
@@ -39,15 +39,14 @@ export default async function TalkPage({
   const content =
     talk?.content ??
     [
-      "## No talk page yet",
-      "",
-      `Create \`content/talk/${slug}.md\` to start discussion for this article.`,
-      "",
-      "Suggested sections:",
-      "",
-      "- Open questions",
-      "- Proposed improvements",
-      "- Decisions",
+      "<h2>No talk page yet</h2>",
+      `<p>Create <code>content/talk/${slug}.html</code> to start discussion for this article.</p>`,
+      "<p>Suggested sections:</p>",
+      "<ul>",
+      "<li>Open questions</li>",
+      "<li>Proposed improvements</li>",
+      "<li>Decisions</li>",
+      "</ul>",
     ].join("\n");
 
   return (
@@ -82,7 +81,7 @@ export default async function TalkPage({
           </Link>
         </div>
       </header>
-      <Markdown content={content} />
+      <Html content={content} />
     </article>
   );
 }

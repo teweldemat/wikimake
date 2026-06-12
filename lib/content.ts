@@ -8,17 +8,17 @@ let cachedContentRoot: string | null = null;
 function resolveContentRoot(): string {
   if (
     cachedContentRoot &&
-    fs.existsSync(path.join(cachedContentRoot, "index.md"))
+    fs.existsSync(path.join(cachedContentRoot, "index.html"))
   ) {
     return cachedContentRoot;
   }
 
   // Next may execute server code with a cwd somewhere under `.next/` during
-  // build-time pre-rendering. Walk upward until we find `content/index.md`.
+  // build-time pre-rendering. Walk upward until we find `content/index.html`.
   let dir = process.cwd();
   for (let i = 0; i < 12; i++) {
     const candidate = path.join(dir, "content");
-    if (fs.existsSync(path.join(candidate, "index.md"))) {
+    if (fs.existsSync(path.join(candidate, "index.html"))) {
       cachedContentRoot = candidate;
       return candidate;
     }
@@ -125,17 +125,22 @@ function parseNoteFile(filePath: string): Note {
 }
 
 export function getHomePage(): { content: string } {
-  const filePath = path.join(resolveContentRoot(), "index.md");
+  const filePath = path.join(resolveContentRoot(), "index.html");
   if (!fs.existsSync(filePath)) {
-    return { content: "# Wikimake\n\nMissing `content/index.md`." };
+    return {
+      content: "<h1>Wikimake</h1><p>Missing <code>content/index.html</code>.</p>",
+    };
   }
   return { content: readTextFile(filePath).trim() };
 }
 
 export function getContributePage(): { content: string } {
-  const filePath = path.join(resolveContentRoot(), "contribute.md");
+  const filePath = path.join(resolveContentRoot(), "contribute.html");
   if (!fs.existsSync(filePath)) {
-    return { content: "# Contribute\n\nMissing `content/contribute.md`." };
+    return {
+      content:
+        "<h1>Contribute</h1><p>Missing <code>content/contribute.html</code>.</p>",
+    };
   }
   return { content: readTextFile(filePath).trim() };
 }
@@ -146,7 +151,7 @@ export function getAllArticles(): ArticleMeta[] {
 
   const files = fs
     .readdirSync(articlesDir)
-    .filter((f) => f.endsWith(".md"))
+    .filter((f) => f.endsWith(".html"))
     .map((f) => path.join(articlesDir, f));
 
   const articles = files.map((fp) => parseArticleFile(fp).meta);
@@ -170,7 +175,7 @@ export function getArticleBySlug(slug: string): Article | null {
 
   const files = fs
     .readdirSync(articlesDir)
-    .filter((f) => f.endsWith(".md"))
+    .filter((f) => f.endsWith(".html"))
     .map((f) => path.join(articlesDir, f));
 
   for (const fp of files) {
@@ -182,14 +187,14 @@ export function getArticleBySlug(slug: string): Article | null {
 
 export function getTalkBySlug(slug: string): Note | null {
   const talkDir = resolveTalkDir();
-  const filePath = path.join(talkDir, `${slug}.md`);
+  const filePath = path.join(talkDir, `${slug}.html`);
   if (!fs.existsSync(filePath)) return null;
   return parseNoteFile(filePath);
 }
 
 export function getTasksBySlug(slug: string): Note | null {
   const tasksDir = resolveTasksDir();
-  const filePath = path.join(tasksDir, `${slug}.md`);
+  const filePath = path.join(tasksDir, `${slug}.html`);
   if (!fs.existsSync(filePath)) return null;
   return parseNoteFile(filePath);
 }

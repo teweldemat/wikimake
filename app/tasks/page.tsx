@@ -18,7 +18,7 @@ export default function TasksIndex() {
   return (
     <>
       <h1>Tasks</h1>
-      <p>Per-article TODO lists stored in-repo (Markdown checkboxes).</p>
+      <p>Per-article TODO lists stored in-repo (HTML checklists).</p>
       <ul className="grid">
         {articles.map((a) => (
           <li key={a.slug} className="card">
