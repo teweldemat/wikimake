@@ -14,6 +14,17 @@ prereqs:
 
 A small clay furnace concentrates heat and airflow so charcoal can reach temperatures suitable for early metallurgy. This version is a simple shaft furnace made from clay, sand, and fiber temper, with a clay air tube (tuyere).
 
+## Terms used in this article
+
+- **Tuyere** — the clay tube that carries the air blast through the furnace wall into the charcoal bed.
+- **Temper** — sand, grog, or fiber mixed into clay so it shrinks less and cracks less when drying and firing.
+- **Course** — one horizontal layer of clay added all the way around the wall; the furnace is built up course by course.
+- **Bore** — the open space inside the shaft, where the charcoal and charge sit.
+- **Leather-hard** — clay dried just enough to be stiff and no longer soft, like thick leather; firm but not yet bone dry.
+- **Backflow** — hot gases pushing backward out through the tuyere instead of air flowing in.
+- **Turbulence** — air tumbling and swirling instead of flowing smoothly; rough inner walls cause it and it weakens the draft.
+- **Spall** — when heated clay or stone pops and throws off hot sharp fragments, usually from trapped moisture.
+
 ## Prerequisites
 
 - Fire source: [Make Fire (Hand Drill)](/articles/make-fire-hand-drill)

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .node { fill: #ffffff; fill-opacity: 0.05; stroke: #b4c0cb; stroke-opacity: 0.6; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
+      .nodetext { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; font-weight: 800; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+      .accent { fill: #e6c36a; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; font-weight: 800; }
+      .cold { fill: #20242c; stroke: #b4c0cb; stroke-opacity: 0.5; }
+      .dullred { fill: #8a2f1f; stroke: #b4c0cb; stroke-opacity: 0.5; }
+      .toohot { fill: #e08a3c; stroke: #b4c0cb; stroke-opacity: 0.5; }
+    </style>
+  </defs>
+
+  <rect class="panel" x="20" y="20" width="880" height="460" rx="18" />
+  <text class="title" x="46" y="54">The anneal cycle: hammer, stiffen, heat, cool, repeat</text>
+
+  <!-- Top node: hammer -->
+  <rect class="node" x="350" y="86" width="220" height="58" rx="12" />
+  <text class="nodetext" x="376" y="111">1) Hammer to shape</text>
+  <text class="label" x="376" y="131">copper slowly stiffens</text>
+
+  <!-- Right node: stiff/cracks -->
+  <rect class="node" x="630" y="196" width="236" height="58" rx="12" />
+  <text class="nodetext" x="650" y="221">2) Stops moving / cracks</text>
+  <text class="label" x="650" y="241">work-hardened: stop hammering</text>
+
+  <!-- Bottom node: heat -->
+  <rect class="node" x="350" y="306" width="220" height="58" rx="12" />
+  <text class="nodetext" x="372" y="331">3) Heat to dull red glow</text>
+  <text class="label" x="372" y="351">hold for a slow count of ten</text>
+
+  <!-- Left node: cool -->
+  <rect class="node" x="54" y="196" width="236" height="58" rx="12" />
+  <text class="nodetext" x="76" y="221">4) Cool: water or air</text>
+  <text class="label" x="76" y="241">either works; copper is soft again</text>
+
+  <!-- Cycle arrows (clockwise) -->
+  <path class="thin" d="M 576 132 C 654 144, 700 162, 726 190" />
+  <path class="thin" d="M 704 180 L 726 190 L 712 200" />
+  <path class="thin" d="M 726 260 C 700 290, 654 312, 578 326" />
+  <path class="thin" d="M 596 316 L 578 326 L 594 334" />
+  <path class="thin" d="M 344 326 C 266 312, 220 290, 194 262" />
+  <path class="thin" d="M 216 272 L 194 262 L 208 252" />
+  <path class="thin" d="M 194 190 C 220 162, 266 142, 342 130" />
+  <path class="thin" d="M 324 124 L 342 130 L 328 140" />
+
+  <!-- Center -->
+  <text class="accent" x="380" y="218">Anneal = steps 3 + 4</text>
+  <text class="label" x="364" y="240">repeat the loop as many times</text>
+  <text class="label" x="364" y="258">as the shaping needs</text>
+
+  <!-- Color cue strip -->
+  <text class="label" x="46" y="432">Color cue (judge in shade):</text>
+  <rect class="cold" x="248" y="412" width="64" height="26" rx="6" />
+  <text class="label" x="248" y="458">no glow: too cold</text>
+  <rect class="dullred" x="420" y="412" width="64" height="26" rx="6" />
+  <text class="label" x="404" y="458">dull red: anneal here</text>
+  <rect class="toohot" x="600" y="412" width="64" height="26" rx="6" />
+  <text class="label" x="572" y="458">bright orange: too hot, may melt</text>
+</svg>

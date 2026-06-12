@@ -14,6 +14,23 @@ prereqs:
 
 This article describes a practical first smelt: producing small metallic copper droplets (“prills”) from ore. You then recover and consolidate these prills into a workable metal piece.
 
+## How smelting works
+
+Copper ore is not metal with dirt on it — it is rock in which the copper is chemically bound to oxygen (and other elements). **Smelting** is the process that breaks that bond and frees the metal.
+
+Burning charcoal in a closed, air-starved furnace does two jobs at once. It makes the charge very hot, and it fills the furnace with hungry, oxygen-poor gases that pull the oxygen out of the ore. Stripped of its oxygen, the copper is left behind as metal, which beads up into droplets (prills). The rest of the rock melts into a glassy waste called slag. This oxygen-stripping is called **reduction**, and it is why charcoal is not just fuel here: it is an ingredient. Flames with too much air do the opposite (they keep the metal oxidized), which is why steady airflow into a deep charcoal bed matters more than big flames.
+
+## Terms used in this article
+
+- **Smelting** — using heat and charcoal to free metal from ore (see above).
+- **Reduction / reducing conditions** — the oxygen-starved, charcoal-rich state inside the furnace that strips oxygen from the ore. The opposite (too much air) is *oxidizing* and yields no metal.
+- **Prill** — a small droplet/bead of freed metal found in the cooled furnace debris.
+- **Slag** — the glassy, stony waste that the non-metal part of the ore melts into. Usually dark, brittle, and worthless except for re-smelting.
+- **Gangue** — the worthless rock mixed into ore as it comes from the ground; it becomes slag.
+- **Flux** — a material (here: silica-rich sand or ash) added to help the gangue melt into a runny slag that separates cleanly from the metal.
+- **Roasting** — pre-heating ore in an open fire before smelting; drives off water and other loosely held substances, leaving the ore dry, brittle, and easier to crush and reduce.
+- **Spall** — when heated rock or clay pops and throws off hot sharp fragments, usually due to trapped moisture.
+
 ## Prerequisites
 
 - Charcoal fuel: [Make Charcoal Fuel (Pit Method)](/articles/make-charcoal-fuel)

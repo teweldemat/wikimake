@@ -13,6 +13,16 @@ prereqs:
 
 Not all green rocks are useful copper ore. This article shows how to identify promising candidates in the field and run a small high-heat test before committing to full smelting.
 
+## Terms used in this article
+
+- **Ore** — rock that contains enough of a metal, chemically bound inside it, to be worth extracting.
+- **Mineralization** — a place where metal-bearing minerals are concentrated in the rock, often visible as colored staining.
+- **Oxidized zone** — weathered rock near the surface where copper minerals have reacted with air and water, turning telltale green/blue.
+- **Outcrop** — a spot where solid bedrock shows through the soil.
+- **Reduction** — using hot charcoal to strip the oxygen out of ore, freeing the metal; the full explanation is in [Smelt Copper Prills (Small Batch)](/articles/smelt-copper-prills).
+- **Slag** — glassy, stony waste left when the non-metal part of the ore melts.
+- **Blowpipe** — an arm-length hollow tube (reed, cane, or hollowed bone) used to blow air into a fire's hot spot. Blow in steady pulses, mouth at the cool end, tip pointed at the glow.
+
 ## Prerequisites
 
 - Fire source: [Make Fire (Hand Drill)](/articles/make-fire-hand-drill)

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 600">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .dashed { fill: none; stroke: #67d6c2; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 6 5; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
+      .head { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+    </style>
+  </defs>
+
+  <text class="title" x="46" y="48">Basic knots (schematic; teal dashes = path of the working end)</text>
+
+  <!-- Panel 1: Overhand knot -->
+  <rect class="panel" x="28" y="70" width="424" height="248" rx="14" />
+  <text class="head" x="46" y="98">1) Overhand knot</text>
+  <circle class="line" cx="195" cy="180" r="40" />
+  <path class="line" d="M 75 250 L 165 212" />
+  <path class="line" d="M 225 212 L 310 244" />
+  <path class="dashed" d="M 310 244 C 270 240, 232 218, 204 196" />
+  <path class="dashed" d="M 212 206 L 202 194 L 218 190" />
+  <text class="label" x="46" y="292">standing part</text>
+  <path class="thin" d="M 122 286 L 102 252" />
+  <text class="label" x="240" y="292">working end through the loop</text>
+  <path class="thin" d="M 318 280 L 310 252" />
+
+  <!-- Panel 2: Half-hitch (pole shown end-on) -->
+  <rect class="panel" x="468" y="70" width="424" height="248" rx="14" />
+  <text class="head" x="486" y="98">2) Half-hitch</text>
+  <circle class="thin" cx="690" cy="170" r="26" />
+  <text class="label" x="772" y="156">pole (end view)</text>
+  <path class="thin" d="M 766 152 L 720 162" />
+  <path class="line" d="M 580 286 L 655 192" />
+  <path class="line" d="M 655 192 A 44 44 0 1 1 728 196" />
+  <path class="line" d="M 728 196 C 716 234, 672 250, 632 252" />
+  <path class="dashed" d="M 616 252 L 560 252" />
+  <path class="dashed" d="M 572 246 L 560 252 L 572 258" />
+  <text class="label" x="486" y="292">around the pole, then tuck under the standing part</text>
+
+  <!-- Panel 3: Two half-hitches -->
+  <rect class="panel" x="28" y="334" width="424" height="248" rx="14" />
+  <text class="head" x="46" y="362">3) Two half-hitches</text>
+  <rect class="thin" x="64" y="420" width="20" height="120" rx="8" />
+  <text class="label" x="46" y="408">post</text>
+  <path class="line" d="M 96 500 L 400 510" />
+  <path class="line" d="M 96 500 A 24 24 0 1 1 98 460" />
+  <path class="line" d="M 98 460 C 130 458, 160 466, 188 478" />
+  <circle class="line" cx="212" cy="492" r="14" />
+  <circle class="line" cx="252" cy="494" r="14" />
+  <path class="dashed" d="M 266 498 L 320 502" />
+  <path class="dashed" d="M 308 496 L 320 502 L 308 508" />
+  <text class="label" x="180" y="446">two hitches around the standing part</text>
+  <path class="thin" d="M 226 452 L 218 478" />
+  <text class="label" x="46" y="566">same direction twice; slide together and pull tight</text>
+
+  <!-- Panel 4: Square knot -->
+  <rect class="panel" x="468" y="334" width="424" height="248" rx="14" />
+  <text class="head" x="486" y="362">4) Square knot (two cords shown thick + thin)</text>
+  <path class="line" d="M 530 440 H 660 C 692 440, 692 500, 660 500 H 530" />
+  <path class="thin" d="M 830 458 H 700" />
+  <path class="thin" d="M 676 458 C 652 460, 652 480, 676 482" />
+  <path class="thin" d="M 676 482 H 830" />
+  <text class="label" x="486" y="528">right over left, then left over right;</text>
+  <text class="label" x="486" y="548">flat interlocked U-bends = correct</text>
+  <text class="label" x="700" y="424">ends exit side by side</text>
+  <path class="thin" d="M 760 430 L 790 452" />
+</svg>

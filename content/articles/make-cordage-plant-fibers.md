@@ -10,6 +10,14 @@ tech_level: 0
 
 Cordage (string/rope) is a force-multiplier: it enables binding, carrying, traps, fishing lines, bows, shelters, and many other tools. You can make usable cordage at Level 0 by processing natural fibers and twisting them into a 2‑ply reverse-wrap.
 
+## Terms used in this article
+
+- **Bast** — the fibrous inner bark layer of some trees and shrubs, between the rough outer bark and the wood; it peels off in long tough strips.
+- **Pith** — the soft, spongy core inside many plant stems; too weak for cordage, so it is removed.
+- **Ply** — one twisted strand; a 2‑ply cord is two strands wrapped around each other.
+- **Splice** — joining new fibers into a strand by overlapping and twisting them together (step 4 below).
+- **Braid** — interweaving three or more strands by passing the outer strands alternately over the middle, like braiding hair.
+
 ## Prerequisites
 
 - None (Level 0).
@@ -62,7 +70,7 @@ Stagger splices so both strands do not get thick at the same spot.
 
 ### 5) Finish and test
 
-1. When you reach the desired length, tie a simple overhand knot to prevent untwisting.
+1. When you reach the desired length, tie a simple overhand knot to prevent untwisting (how to tie one: [Tie Basic Knots](/articles/tie-basic-knots); a knot is just the cord crossed into a loop with the end passed through and pulled tight).
 2. Pull hard along the length to set the twist.
 3. If it loosens, add more twist and keep tighter tension while wrapping.
 

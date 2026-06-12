@@ -3,22 +3,34 @@ title: "Make a Copper Awl (Metal Tool)"
 slug: "make-copper-awl-metal-tool"
 summary: "Consolidate smelted copper prills and forge a pointed awl for piercing, scribing, and fine woodworking."
 order: 1
-tech_level: 3
+tech_level: 4
 prereqs:
   - "smelt-copper-prills"
+  - "anneal-copper"
   - "make-fire-hand-drill"
   - "make-cordage-plant-fibers"
+  - "lash-objects-with-cordage"
 ---
 
 ## Summary
 
 This is a first practical metal tool: a copper awl. You consolidate copper prills into a small billet, then forge and anneal it into a tapered point. The awl can pierce leather, bark, and thin wood, and it becomes a gateway tool for more precise fabrication.
 
+## Terms used in this article
+
+- **Prill** — a small droplet/bead of metal recovered from smelting (see [Smelt Copper Prills (Small Batch)](/articles/smelt-copper-prills)).
+- **Billet** — a small consolidated block of metal, ready to be shaped into a tool.
+- **Forge / forging** — shaping metal with hammer blows, usually while it is hot.
+- **Work-hardening** — copper stiffens and eventually cracks as you hammer it; explained in [Anneal Copper (Soften Work-Hardened Metal)](/articles/anneal-copper).
+- **Anneal** — heat the copper to a dull red glow and cool it to make it soft again; full method in [Anneal Copper (Soften Work-Hardened Metal)](/articles/anneal-copper).
+- **Hafting** — fitting a tool head onto a handle.
+
 ## Prerequisites
 
 - Copper source: [Smelt Copper Prills (Small Batch)](/articles/smelt-copper-prills)
+- Softening between hammering sessions: [Anneal Copper (Soften Work-Hardened Metal)](/articles/anneal-copper)
 - Fire source: [Make Fire (Hand Drill)](/articles/make-fire-hand-drill)
-- Optional binding/hafting: [Make Cordage (Plant Fibers)](/articles/make-cordage-plant-fibers)
+- Optional binding/hafting: [Make Cordage (Plant Fibers)](/articles/make-cordage-plant-fibers) and [Lash Objects Together (Cordage)](/articles/lash-objects-with-cordage)
 
 ## Diagram
 
@@ -49,7 +61,7 @@ If the billet starts cracking while hammering, anneal again (next step).
 2. Remove and let cool (air cool is fine).
 3. Resume hammering.
 
-Copper work-hardens quickly; frequent annealing prevents cracking.
+Copper work-hardens quickly; frequent annealing prevents cracking. If you have not annealed before, read [Anneal Copper (Soften Work-Hardened Metal)](/articles/anneal-copper) first — it explains the signs that it is time to anneal and how to judge "dull red".
 
 ### 3) Forge the point
 
@@ -72,7 +84,7 @@ Target shape:
 
 1. Split a small stick.
 2. Seat the thick end of awl in the split.
-3. Lash tightly with cordage.
+3. Lash tightly with cordage (technique: [Lash Objects Together (Cordage)](/articles/lash-objects-with-cordage)).
 
 ## Verification
 

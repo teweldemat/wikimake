@@ -10,6 +10,14 @@ tech_level: 0
 
 The hand drill is one of the simplest friction-fire methods: you spin a straight wooden spindle between your palms against a wooden hearth board to make a hot dust pile that becomes a coal (ember), then transfer it into a tinder bundle and blow it into flame.
 
+## Terms used in this article
+
+- **Friction fire** — making fire from rubbing: fast spinning grinds off wood dust and heats it until the dust pile starts to glow on its own.
+- **Spindle** — the straight stick you spin between your palms.
+- **Hearth board** — the flat piece of wood the spindle drills into.
+- **Coal (ember)** — a small glowing lump of charred dust; not yet flame, but hot enough to ignite tinder when blown on.
+- **Resin-soaked wood** — wood heavy with sticky sap. It smears and glazes instead of grinding into dry dust, so it rarely makes a coal; avoid it.
+
 ## Prerequisites
 
 - A dry environment (or at least dry materials you can protect from moisture).

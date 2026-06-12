@@ -3,10 +3,12 @@ title: "Make a Gorge Hook + Handline (Fishing Tool)"
 slug: "make-gorge-hook-handline"
 summary: "Catch fish with a simple bone/wood gorge hook and a plant-fiber handline."
 order: 1
-tech_level: 1
+tech_level: 3
 prereqs:
   - "make-cordage-plant-fibers"
   - "make-stone-flake-cutting-edge"
+  - "tie-basic-knots"
+  - "lash-objects-with-cordage"
 ---
 
 ## Summary
@@ -15,10 +17,17 @@ A **gorge hook** is one of the simplest early fishing hooks: it is a small strai
 
 This article covers making a gorge hook, attaching it to a handline, and basic ways to fish with it.
 
+## Terms used in this article
+
+- **Eddy** — a calm pocket of slowly circling water just downstream of a rock or bank; fish rest there out of the current.
+- **Standing part / half-hitch** — rope-work words, explained in [Tie Basic Knots](/articles/tie-basic-knots).
+
 ## Prerequisites
 
 - Cordage for line: [Make Cordage (Plant Fibers)](/articles/make-cordage-plant-fibers)
 - A sharp cutting edge for shaping: [Make a Stone Flake Cutting Edge](/articles/make-stone-flake-cutting-edge)
+- Knots for locking the tie: [Tie Basic Knots](/articles/tie-basic-knots)
+- Wrapping technique: [Lash Objects Together (Cordage)](/articles/lash-objects-with-cordage)
 
 ## Diagram
 
@@ -49,8 +58,8 @@ If using wood: choose a straight-grained piece and avoid punky or cracked wood.
 Goal: the line must not slip off-center.
 
 1. Lay the line across the middle of the gorge.
-2. Wrap tightly around the gorge 8 to 12 turns.
-3. Finish with two locking half-hitches around the standing part of the line (or tie off by tucking the end under the last wraps and pulling tight).
+2. Wrap tightly around the gorge 8 to 12 turns, keeping constant tension (full technique: [Lash Objects Together (Cordage)](/articles/lash-objects-with-cordage)).
+3. Finish with two locking half-hitches around the standing part of the line (how to tie them: [Tie Basic Knots](/articles/tie-basic-knots)), or tie off by tucking the end under the last wraps and pulling tight.
 4. Pull hard to test: the lashing should not slide.
 
 ### 3) Add optional sinker and float

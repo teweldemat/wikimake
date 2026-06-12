@@ -14,6 +14,12 @@ Charcoal is wood that has been heated with limited oxygen. It burns hotter and c
 
 This article describes a simple pit method that can be done with Level 0 tools.
 
+## Terms used in this article
+
+- **Charring** — heating wood with too little air to burn fully, so instead of turning to ash it turns into black, carbon-rich charcoal. Charred wood keeps its shape; ash is grey powder and is a failure here.
+- **Volatiles** — the water, sap, and wood gases that cook out of the wood as smoke during charring. When they are gone, the smoke thins and the charcoal is ready.
+- **Yield** — how much usable charcoal you get from the wood you put in.
+
 ## Prerequisites
 
 - Fire source: [Make Fire (Hand Drill)](/articles/make-fire-hand-drill)
