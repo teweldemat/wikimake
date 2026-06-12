@@ -8,6 +8,7 @@ prereqs:
   - "make-fire-hand-drill"
   - "measure-without-tools"
   - "measure-angles-without-tools"
+  - "find-and-prepare-clay"
 ---
 
 ## Summary
@@ -30,6 +31,7 @@ A small clay furnace concentrates heat and airflow so charcoal can reach tempera
 - Fire source: [Make Fire (Hand Drill)](/articles/make-fire-hand-drill)
 - Body-unit sizing: [Measure Without Tools (Body Units)](/articles/measure-without-tools)
 - Angle references (for tuyere angle): [Measure Angles Without Tools (Degrees)](/articles/measure-angles-without-tools)
+- Clay sourcing and kneading: [Find and Prepare Clay](/articles/find-and-prepare-clay)
 
 ## Diagram
 
@@ -37,8 +39,8 @@ A small clay furnace concentrates heat and airflow so charcoal can reach tempera
 
 ## Materials
 
-- Clay-rich soil
-- Sand or crushed fired-clay grog (to reduce cracking)
+- Clay-rich soil (how to find and test it: [Find and Prepare Clay](/articles/find-and-prepare-clay))
+- Sand or grog (to reduce cracking); grog is crushed fired clay, e.g. broken pottery from [Fire a Clay Pinch Pot (First Pottery)](/articles/fire-clay-pinch-pot)
 - Chopped dry grass or straw (fiber temper)
 - Water
 - Flat stones for base

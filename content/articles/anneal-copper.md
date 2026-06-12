@@ -7,6 +7,7 @@ tech_level: 3
 prereqs:
   - "smelt-copper-prills"
   - "make-fire-hand-drill"
+  - "make-green-wood-tongs"
 ---
 
 ## Summary
@@ -26,6 +27,7 @@ Copper has a property that surprises beginners: hammering it makes it harder. Ea
 
 - Copper to work: [Smelt Copper Prills (Small Batch)](/articles/smelt-copper-prills)
 - Fire: [Make Fire (Hand Drill)](/articles/make-fire-hand-drill)
+- Handling hot metal: [Make Green-Wood Tongs](/articles/make-green-wood-tongs)
 
 A plain wood fire with good coals is enough; a charcoal bed ([Make Charcoal Fuel (Pit Method)](/articles/make-charcoal-fuel)) reaches annealing heat faster and more evenly.
 
@@ -37,7 +39,7 @@ A plain wood fire with good coals is enough; a charcoal bed ([Make Charcoal Fuel
 
 - The copper piece being worked
 - An established bed of glowing coals
-- Green-wood tongs or two sticks for handling hot metal
+- Green-wood tongs ([Make Green-Wood Tongs](/articles/make-green-wood-tongs)) or two sticks for handling hot metal
 - Water in a shell, cup, or pit (optional, for quenching)
 
 ## Steps

@@ -33,7 +33,7 @@ Not all green rocks are useful copper ore. This article shows how to identify pr
 - Candidate rocks with green/blue mineral staining
 - Hammerstone/anvil stone (natural rocks)
 - Charcoal
-- Small clay cup, depression, or thick charcoal bed
+- Small clay cup ([Fire a Clay Pinch Pot (First Pottery)](/articles/fire-clay-pinch-pot)), a depression in the ground, or a thick charcoal bed
 - Blowpipe (hollow reed/bone tube) or naturally strong draft from a narrow fire pit
 
 ## Where to search

@@ -67,5 +67,5 @@ If you want to help modern readers too, you can add metric in parentheses, but k
 
 ## Variants
 
-- **Cord reference**: once you can make cordage, tie knots every palm-width and use the cord as a flexible measuring tape.
+- **Cord reference**: once you can make cordage ([Make Cordage (Plant Fibers)](/articles/make-cordage-plant-fibers)), tie knots every palm-width ([Tie Basic Knots](/articles/tie-basic-knots)) and use the cord as a flexible measuring tape.
 

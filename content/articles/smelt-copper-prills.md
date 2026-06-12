@@ -8,6 +8,7 @@ prereqs:
   - "make-charcoal-fuel"
   - "build-small-clay-furnace"
   - "find-and-test-copper-ore"
+  - "make-green-wood-tongs"
 ---
 
 ## Summary
@@ -36,6 +37,7 @@ Burning charcoal in a closed, air-starved furnace does two jobs at once. It make
 - Charcoal fuel: [Make Charcoal Fuel (Pit Method)](/articles/make-charcoal-fuel)
 - Furnace: [Build a Small Clay Furnace (With Tuyere)](/articles/build-small-clay-furnace)
 - Ore selection: [Find and Test Copper Ore (Field Method)](/articles/find-and-test-copper-ore)
+- Handling hot material: [Make Green-Wood Tongs](/articles/make-green-wood-tongs)
 
 ## Materials
 
@@ -43,7 +45,8 @@ Burning charcoal in a closed, air-starved furnace does two jobs at once. It make
 - Charcoal (lump + fine)
 - Small amount of silica-rich sand or ash (optional flux)
 - Clay furnace with working tuyere
-- Hammerstone and flat stone for breaking slag and recovering prills
+- Green-wood tongs for moving hot masses ([Make Green-Wood Tongs](/articles/make-green-wood-tongs))
+- Hammerstone and flat stone for breaking slag and recovering prills (a hammerstone is any tough rounded rock; see [Make a Stone Flake Cutting Edge](/articles/make-stone-flake-cutting-edge))
 
 ## Steps
 
@@ -80,7 +83,7 @@ You want sustained bright heat, not intermittent flare-ups.
 ### 5) Recover prills
 
 1. Let furnace cool to safe handling temperature.
-2. Remove slaggy masses from the reaction zone.
+2. Remove slaggy masses from the reaction zone with green-wood tongs or stout sticks.
 3. Break slag on a flat stone.
 4. Pick out metallic copper prills/droplets.
 

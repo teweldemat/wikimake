@@ -84,5 +84,5 @@ A good cutting flake can:
 
 ## Variants
 
-- **Scraper**: pick a thick flake with a strong edge; scrape wood and hide with it.
+- **Scraper**: pick a thick flake with a strong edge; scrape wood and animal hides (skins) with it.
 - **Sawing**: a serrated edge can saw plant stalks and small branches by pulling repeatedly.

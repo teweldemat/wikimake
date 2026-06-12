@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .clay { fill: #8a6a4f; stroke: #b08a66; stroke-width: 1.5; }
+      .hot { fill: #e6c36a; fill-opacity: 0.55; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+    </style>
+  </defs>
+
+  <rect class="panel" x="20" y="20" width="920" height="380" rx="18" />
+  <text class="title" x="46" y="54">Pinch pot: pinch, dry, fire (schematic)</text>
+
+  <!-- Step 1: pinch -->
+  <rect class="panel" x="42" y="82" width="270" height="286" rx="14" />
+  <text class="label" x="58" y="108">1) Pinch + thin the walls</text>
+  <!-- cross-section of pot being pinched -->
+  <path class="clay" d="M 100 170 L 100 270 C 100 292, 130 300, 176 300 C 222 300, 252 292, 252 270 L 252 170 L 224 170 L 224 264 C 224 274, 204 280, 176 280 C 148 280, 128 274, 128 264 L 128 170 Z" />
+  <text class="label" x="58" y="146">thumb inside, fingers outside</text>
+  <path class="thin" d="M 176 156 L 176 196" />
+  <path class="thin" d="M 170 188 L 176 196 L 182 188" />
+  <text class="label" x="58" y="336">turn after every pinch; even finger-thick walls</text>
+
+  <!-- Arrow -->
+  <path class="thin" d="M 324 220 L 358 220" />
+  <path class="thin" d="M 350 214 L 358 220 L 350 226" />
+
+  <!-- Step 2: dry -->
+  <rect class="panel" x="368" y="82" width="270" height="286" rx="14" />
+  <text class="label" x="384" y="108">2) Dry to bone dry (days)</text>
+  <path class="clay" d="M 430 190 L 430 270 C 430 292, 458 300, 502 300 C 546 300, 574 292, 574 270 L 574 190 L 548 190 L 548 264 C 548 274, 530 280, 502 280 C 474 280, 456 274, 456 264 L 456 190 Z" />
+  <path class="thin" d="M 470 160 C 476 150, 470 144, 476 134" />
+  <path class="thin" d="M 502 160 C 508 150, 502 144, 508 134" />
+  <path class="thin" d="M 534 160 C 540 150, 534 144, 540 134" />
+  <text class="label" x="384" y="336">shade, off the ground; light color, not cool</text>
+
+  <!-- Arrow -->
+  <path class="thin" d="M 650 220 L 684 220" />
+  <path class="thin" d="M 676 214 L 684 220 L 676 226" />
+
+  <!-- Step 3: fire -->
+  <rect class="panel" x="694" y="82" width="226" height="286" rx="14" />
+  <text class="label" x="710" y="108">3) Fire in embers ~1 hour</text>
+  <ellipse class="hot" cx="806" cy="276" rx="92" ry="34" />
+  <path class="clay" d="M 762 230 L 762 274 C 762 288, 780 294, 806 294 C 832 294, 850 288, 850 274 L 850 230 L 832 230 L 832 270 C 832 278, 820 282, 806 282 C 792 282, 780 278, 780 270 L 780 230 Z" />
+  <path class="thin" d="M 730 250 C 738 234, 730 224, 738 210" />
+  <path class="thin" d="M 874 250 C 882 234, 874 224, 882 210" />
+  <text class="label" x="710" y="330">glows red at peak;</text>
+  <text class="label" x="710" y="350">cool slowly in the ashes</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440">
+  <defs>
+    <style>
+      .panel { fill: #ffffff; fill-opacity: 0.03; stroke: #ffffff; stroke-opacity: 0.12; }
+      .line { fill: none; stroke: #eef2f6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #b4c0cb; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .soil { fill: #2f3642; }
+      .clayband { fill: #8a6a4f; }
+      .label { fill: #b4c0cb; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.01em; }
+      .head { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 0.01em; }
+      .title { fill: #eef2f6; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.01em; }
+      .good { fill: #67d6c2; }
+      .bad { fill: #e6c36a; }
+    </style>
+  </defs>
+
+  <text class="title" x="46" y="48">Finding clay + the coil test</text>
+
+  <!-- Panel 1: stream bank cross-section -->
+  <rect class="panel" x="28" y="70" width="424" height="340" rx="14" />
+  <text class="head" x="46" y="98">Where: cut bank cross-section</text>
+  <!-- bank profile -->
+  <path class="thin" d="M 60 160 L 240 160 L 240 330 L 420 330" />
+  <!-- topsoil layer -->
+  <rect class="soil" x="60" y="160" width="180" height="38" />
+  <text class="label" x="262" y="182">topsoil + roots (scrape off)</text>
+  <path class="thin" d="M 256 178 L 226 180" />
+  <!-- clay band -->
+  <rect class="clayband" x="60" y="198" width="180" height="56" />
+  <text class="label" x="262" y="228">smooth gray/red/tan band = clay</text>
+  <path class="thin" d="M 256 224 L 226 226" />
+  <!-- water -->
+  <path class="thin" d="M 250 348 C 290 342, 330 354, 420 348" />
+  <text class="label" x="262" y="382">stream (cuts the bank open)</text>
+  <path class="thin" d="M 300 376 L 310 354" />
+  <text class="label" x="46" y="310">dig the clean band,</text>
+  <text class="label" x="46" y="330">not the surface crust</text>
+
+  <!-- Panel 2: coil test -->
+  <rect class="panel" x="468" y="70" width="424" height="340" rx="14" />
+  <text class="head" x="486" y="98">Test: roll a coil, bend it around a finger</text>
+
+  <!-- rolled coil -->
+  <path class="line" d="M 500 150 L 700 150" />
+  <text class="label" x="716" y="155">finger-thick coil</text>
+
+  <!-- pass: smooth bend -->
+  <path class="line" d="M 520 240 C 560 200, 630 200, 668 240" />
+  <circle class="good" cx="594" cy="216" r="6" />
+  <text class="label" x="700" y="226">bends smoothly =</text>
+  <text class="label" x="700" y="244">good clay</text>
+  <path class="thin" d="M 694 230 L 672 234" />
+
+  <!-- fail: cracked bend -->
+  <path class="line" d="M 520 350 C 560 310, 630 310, 668 350" />
+  <path class="thin" d="M 568 322 L 562 308" />
+  <path class="thin" d="M 596 318 L 596 302" />
+  <path class="thin" d="M 624 322 L 630 308" />
+  <circle class="bad" cx="594" cy="330" r="6" />
+  <text class="label" x="700" y="334">cracks on the curve =</text>
+  <text class="label" x="700" y="352">lean clay / keep looking</text>
+  <path class="thin" d="M 694 338 L 672 342" />
+</svg>

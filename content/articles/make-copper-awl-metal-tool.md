@@ -24,6 +24,7 @@ This is a first practical metal tool: a copper awl. You consolidate copper prill
 - **Work-hardening** — copper stiffens and eventually cracks as you hammer it; explained in [Anneal Copper (Soften Work-Hardened Metal)](/articles/anneal-copper).
 - **Anneal** — heat the copper to a dull red glow and cool it to make it soft again; full method in [Anneal Copper (Soften Work-Hardened Metal)](/articles/anneal-copper).
 - **Hafting** — fitting a tool head onto a handle.
+- **Hammerstone / anvil stone** — natural rocks used as hammer and work surface; how to choose them is covered in [Make a Stone Flake Cutting Edge](/articles/make-stone-flake-cutting-edge).
 
 ## Prerequisites
 

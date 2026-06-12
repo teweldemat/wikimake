@@ -95,5 +95,5 @@ Good charcoal pieces are:
 ## Variants
 
 - **Mound method**: stack wood above ground and cover with soil/turf.
-- **Small-batch clamp**: for tiny amounts, char wood in a tightly covered clay vessel with a vent.
+- **Small-batch clamp**: for tiny amounts, char wood in a tightly covered clay vessel with a vent (vessel: [Fire a Clay Pinch Pot (First Pottery)](/articles/fire-clay-pinch-pot)).
 
