@@ -57,6 +57,17 @@ export default async function ArticlePage({
           </span>
         </div>
         <GitMetaLine git={article.meta.git} />
+        {article.meta.keywords ? (
+          <div className="keywordTags" aria-label="Keywords">
+            {Object.entries(article.meta.keywords)
+              .sort((a, b) => b[1] - a[1])
+              .map(([term]) => (
+                <span key={term} className="keywordTag">
+                  {term}
+                </span>
+              ))}
+          </div>
+        ) : null}
         <div className="articleTabs" aria-label="Article sections">
           <Link className="tab tabActive" href={`/articles/${slug}`}>
             Article

@@ -25,6 +25,13 @@
 <li>SVG for diagrams.</li>
 <li>PNG only when rendered from an SVG source committed in-repo.</li>
 </ul>
+<h2>Keywords</h2>
+<p>Every article front matter includes a <code>keywords</code> map of keyword to weight in <code>(0, 1]</code> (1 = central topic), used by the site search to rank results:</p>
+<pre><code>keywords:
+  copper: 1
+  smelting: 0.9
+  ore: 0.6</code></pre>
+<p>Keys must be terms from the global vocabulary in <code>content/keywords.json</code>. If you need a new keyword, add it there first (with any synonyms as <code>aliases</code>). <code>npm run validate</code> enforces that every article has a non-empty keywords map drawn from the vocabulary with valid weights.</p>
 <h2>Writing dimensions</h2>
 <p>Primary dimensions use body units (see <a href="/articles/measure-without-tools">Measure Without Tools (Body Units)</a>); metric may follow in parentheses. Angles use the reference vocabulary from <a href="/articles/measure-angles-without-tools">Measure Angles Without Tools (Degrees)</a>.</p>
 <p>Good:</p>

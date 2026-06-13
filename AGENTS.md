@@ -25,7 +25,20 @@ Optional (recommended): declare machine-checkable prerequisites in front matter:
 
 - `prereqs`: list of prerequisite article slugs (artificial dependencies only). Natural-world inputs are not listed here.
 
-Run `npm run validate` before merging; it enforces `tech_level` and checks that any declared `prereqs` are strictly lower tech level.
+## Keywords
+
+Every article declares a `keywords` map in front matter: each key is a keyword and each value is its weight in `(0, 1]`, signalling how closely the keyword relates to the article (1 = central topic). Example:
+
+```yaml
+keywords:
+  copper: 1
+  smelting: 0.9
+  ore: 0.6
+```
+
+Keys must come from the **global vocabulary** in `content/keywords.json` (a list of `{ term, aliases }` entries). The site search normalizes a query word to a vocabulary term — exact term, then alias, then nearest match for typos — and ranks articles by the summed weights of the matched keywords. To use a keyword that is not yet in the vocabulary, add it (with any synonyms as `aliases`) to `content/keywords.json` first.
+
+Run `npm run validate` before merging; it enforces `tech_level`, checks that any declared `prereqs` are strictly lower tech level, and checks that every article has a non-empty `keywords` map whose keys are vocabulary terms and whose weights are in `(0, 1]`.
 
 ## Content and assets
 

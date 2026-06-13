@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Space_Grotesk, Spectral } from "next/font/google";
+import HeaderSearch from "@/components/HeaderSearch";
 import "./globals.css";
 
 const spectral = Spectral({
@@ -46,6 +47,7 @@ export default function RootLayout({
               <Link href="/talk">Talk</Link>
               <Link href="/contribute">Contribute</Link>
             </nav>
+            <HeaderSearch />
           </div>
         </header>
         <main className="wrap main">{children}</main>

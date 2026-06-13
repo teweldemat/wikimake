@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { getGitFileMeta, type GitFileMeta } from "./git";
+import type { Vocabulary, VocabEntry } from "./search";
 
 let cachedContentRoot: string | null = null;
 
@@ -50,6 +51,7 @@ export type ArticleMeta = {
   summary?: string;
   order?: number;
   techLevel?: number;
+  keywords?: Record<string, number>;
   git?: GitFileMeta;
 };
 
@@ -98,12 +100,25 @@ function parseArticleFile(filePath: string): Article {
   const order = safeNumber(parsed.data.order);
   const techLevel =
     safeNumber(parsed.data.tech_level) ?? safeNumber(parsed.data.techLevel);
+  const keywords = parseKeywords(parsed.data.keywords);
   const git = getGitFileMeta(filePath) ?? undefined;
 
   return {
-    meta: { slug, title, summary, order, techLevel, git },
+    meta: { slug, title, summary, order, techLevel, keywords, git },
     content: parsed.content.trim(),
   };
+}
+
+function parseKeywords(raw: unknown): Record<string, number> | undefined {
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) return undefined;
+  const out: Record<string, number> = {};
+  for (const [key, value] of Object.entries(raw as Record<string, unknown>)) {
+    const weight = safeNumber(value);
+    if (typeof key === "string" && key.trim() && weight !== undefined) {
+      out[key.trim()] = weight;
+    }
+  }
+  return Object.keys(out).length ? out : undefined;
 }
 
 function parseNoteFile(filePath: string): Note {
@@ -197,4 +212,32 @@ export function getTasksBySlug(slug: string): Note | null {
   const filePath = path.join(tasksDir, `${slug}.html`);
   if (!fs.existsSync(filePath)) return null;
   return parseNoteFile(filePath);
+}
+
+let cachedVocabulary: Vocabulary | null = null;
+
+export function getKeywordVocabulary(): Vocabulary {
+  if (cachedVocabulary) return cachedVocabulary;
+
+  const filePath = path.join(resolveContentRoot(), "keywords.json");
+  if (!fs.existsSync(filePath)) {
+    cachedVocabulary = { terms: [], entries: [] };
+    return cachedVocabulary;
+  }
+
+  const parsed = JSON.parse(readTextFile(filePath)) as {
+    keywords?: Array<{ term?: unknown; aliases?: unknown }>;
+  };
+
+  const entries: VocabEntry[] = [];
+  for (const k of parsed.keywords ?? []) {
+    if (typeof k?.term !== "string" || !k.term.trim()) continue;
+    const aliases = Array.isArray(k.aliases)
+      ? k.aliases.filter((a): a is string => typeof a === "string")
+      : [];
+    entries.push({ term: k.term.trim(), aliases });
+  }
+
+  cachedVocabulary = { terms: entries.map((e) => e.term), entries };
+  return cachedVocabulary;
 }

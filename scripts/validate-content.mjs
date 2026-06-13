@@ -79,6 +79,104 @@ function normalizePrereqs(frontMatter, errors, filePath) {
   return [];
 }
 
+// Load + structurally validate the global keyword vocabulary. Returns a Set of
+// canonical terms (empty if the file is missing/invalid; errors are recorded).
+function loadVocabulary(repoRoot, errors) {
+  const fp = path.join(repoRoot, "content", "keywords.json");
+  const terms = new Set();
+  if (!fs.existsSync(fp)) {
+    errors.push(`${fp}: missing global keyword vocabulary`);
+    return terms;
+  }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(fs.readFileSync(fp, "utf8"));
+  } catch (e) {
+    errors.push(`${fp}: invalid JSON (${e.message})`);
+    return terms;
+  }
+
+  if (!parsed || !Array.isArray(parsed.keywords)) {
+    errors.push(`${fp}: must be an object with a "keywords" array`);
+    return terms;
+  }
+
+  const aliasOwner = new Map();
+  for (const entry of parsed.keywords) {
+    if (!entry || typeof entry.term !== "string" || !entry.term.trim()) {
+      errors.push(`${fp}: each keyword needs a non-empty string "term"`);
+      continue;
+    }
+    const term = entry.term.trim();
+    if (terms.has(term)) {
+      errors.push(`${fp}: duplicate term "${term}"`);
+      continue;
+    }
+    terms.add(term);
+
+    const aliases = entry.aliases ?? [];
+    if (!Array.isArray(aliases)) {
+      errors.push(`${fp}: aliases for "${term}" must be an array`);
+      continue;
+    }
+    for (const alias of aliases) {
+      if (typeof alias !== "string" || !alias.trim()) {
+        errors.push(`${fp}: aliases for "${term}" must be non-empty strings`);
+        continue;
+      }
+      const a = alias.trim();
+      if (aliasOwner.has(a) && aliasOwner.get(a) !== term) {
+        errors.push(
+          `${fp}: alias "${a}" is claimed by both "${aliasOwner.get(a)}" and "${term}"`,
+        );
+      }
+      aliasOwner.set(a, term);
+    }
+  }
+
+  // An alias must not collide with a different canonical term.
+  for (const [alias, owner] of aliasOwner) {
+    if (terms.has(alias) && alias !== owner) {
+      errors.push(`${fp}: alias "${alias}" collides with canonical term "${alias}"`);
+    }
+  }
+
+  return terms;
+}
+
+// Every article must declare a non-empty keywords map; each key must be a
+// vocabulary term and each weight a number in (0, 1].
+function validateKeywords(raw, vocabulary, errors, filePath) {
+  if (raw == null) {
+    errors.push(`${filePath}: front matter must include a non-empty keywords map`);
+    return;
+  }
+  if (typeof raw !== "object" || Array.isArray(raw)) {
+    errors.push(`${filePath}: keywords must be a map of term -> weight`);
+    return;
+  }
+
+  const entries = Object.entries(raw);
+  if (entries.length === 0) {
+    errors.push(`${filePath}: keywords map must not be empty`);
+    return;
+  }
+
+  for (const [term, weight] of entries) {
+    if (vocabulary.size > 0 && !vocabulary.has(term)) {
+      errors.push(
+        `${filePath}: keyword "${term}" is not in content/keywords.json vocabulary`,
+      );
+    }
+    if (typeof weight !== "number" || !Number.isFinite(weight) || weight <= 0 || weight > 1) {
+      errors.push(
+        `${filePath}: keyword "${term}" weight must be a number in (0, 1] (got ${JSON.stringify(weight)})`,
+      );
+    }
+  }
+}
+
 function main() {
   const repoRoot = findRepoRoot(process.cwd());
   if (!repoRoot) {
@@ -95,6 +193,7 @@ function main() {
     : [];
 
   const errors = [];
+  const vocabulary = loadVocabulary(repoRoot, errors);
   const bySlug = new Map();
 
   for (const fp of files) {
@@ -118,6 +217,7 @@ function main() {
 
     const prereqs = normalizePrereqs(parsed.data, errors, fp);
     validateBody(parsed.content, errors, fp);
+    validateKeywords(parsed.data.keywords, vocabulary, errors, fp);
 
     bySlug.set(slug, { slug, techLevel, prereqs, filePath: fp });
   }
