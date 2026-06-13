@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Html from "@/components/Html";
+import ArticleIcon from "@/components/ArticleIcon";
 import { getAllArticles, getHomePage } from "@/lib/content";
 
 export const dynamic = "force-static";
@@ -22,9 +23,12 @@ export default function Home() {
         <ul className="grid">
           {articles.map((a) => (
             <li key={a.slug} className="card">
-              <h3 className="cardTitle">
-                <Link href={`/articles/${a.slug}`}>{a.title}</Link>
-              </h3>
+              <div className="cardHead">
+                <ArticleIcon slug={a.slug} />
+                <h3 className="cardTitle">
+                  <Link href={`/articles/${a.slug}`}>{a.title}</Link>
+                </h3>
+              </div>
               <p className="cardMeta">
                 <span className="pill">
                   Tech Level {typeof a.techLevel === "number" ? a.techLevel : "?"}

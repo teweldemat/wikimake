@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ArticleIcon from "@/components/ArticleIcon";
 import { getAllArticles } from "@/lib/content";
 
 export const metadata = {
@@ -25,9 +26,12 @@ export default function ArticlesIndex() {
       <ul className="grid">
         {articles.map((a) => (
           <li key={a.slug} className="card">
-            <h2 className="cardTitle">
-              <Link href={`/articles/${a.slug}`}>{a.title}</Link>
-            </h2>
+            <div className="cardHead">
+              <ArticleIcon slug={a.slug} />
+              <h2 className="cardTitle">
+                <Link href={`/articles/${a.slug}`}>{a.title}</Link>
+              </h2>
+            </div>
             <p className="cardMeta">
               <span className="pill">
                 Tech Level {typeof a.techLevel === "number" ? a.techLevel : "?"}

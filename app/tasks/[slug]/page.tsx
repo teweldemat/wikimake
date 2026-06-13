@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Html from "@/components/Html";
+import ArticleIcon from "@/components/ArticleIcon";
 import GitMetaLine from "@/components/GitMetaLine";
 import { getAllArticles, getArticleBySlug, getTasksBySlug } from "@/lib/content";
 
@@ -59,7 +60,10 @@ export default async function TasksPage({
           <span aria-hidden="true">/</span>
           <span>Tasks</span>
         </div>
-        <h1 className="articleTitle">Tasks: {article.meta.title}</h1>
+        <div className="articleTitleRow">
+          <ArticleIcon slug={slug} size={44} className="articleIcon" />
+          <h1 className="articleTitle">Tasks: {article.meta.title}</h1>
+        </div>
         <div className="pillRow" aria-label="Article metadata">
           <span className="pill">
             Tech Level{" "}

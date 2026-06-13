@@ -129,6 +129,23 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
+.cardHead {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.cardIcon {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  margin-top: 1px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
 .cardTitle {
   margin: 0;
   font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
@@ -211,6 +228,27 @@ a:hover {
 
 .crumbs a:hover {
   color: var(--ink);
+}
+
+.articleTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 12px 0 0;
+}
+
+.articleIcon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  padding: 7px;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+}
+
+.articleTitleRow .articleTitle {
+  margin: 0;
 }
 
 .articleTitle {
